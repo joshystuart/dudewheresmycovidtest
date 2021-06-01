@@ -1,0 +1,81 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "yarn install && lerna bootstrap --npm-client=yarn -- --force",
+    "start:api": "cd packages/api && yarn start:dev",
+    "start:api:watch": "watch \"yarn start:api\" -i \"**/client\" -i \"**/*node_modules*\" -i \"**/*spec*\" -i \"**/dist\"",
+    "start:client": "cd packages/client && yarn start",
+    "clean": "lerna clean -y && lerna run clean",
+    "clean:lib": "lerna run clean",
+    "build": "lerna run build",
+    "build:package": "lerna run build --stream --scope",
+    "build:client": "yarn build:package @dudewheresmycovidtest/client",
+    "build:api": "yarn build:package @dudewheresmycovidtest/api",
+    "build:api:docker": "yarn build:api && cd packages/api && yarn build:docker",
+    "format": "yarn prettier && yarn lint:fix",
+    "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint -- --fix",
+    "test": "lerna run test",
+    "update:latest": "yarn upgrade --latest",
+    "update:all": "lerna run update:latest",
+    "lerna:version": "lerna version --yes --conventional-commits --message 'chore(release): publish [skip ci]'",
+    "lerna:publish": "lerna publish --no-verify-access --yes from-package",
+    "cz": "git-cz",
+    "cz:retry": "git-cz --retry",
+    "release:api": "lerna run release --stream --scope @dudewheresmycovidtest/api"
+  },
+  "dependencies": {
+    "@rafterjs/cors-plugin": "0.8.4",
+    "@rafterjs/logger-plugin": "0.8.4",
+    "@rafterjs/utils": "0.8.4",
+    "rafter": "0.8.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.14.3",
+    "@babel/core": "7.14.3",
+    "@babel/eslint-parser": "7.14.3",
+    "@babel/node": "7.14.2",
+    "@rafterjs/babel-preset-rafter": "0.8.4",
+    "@rafterjs/eslint-config": "0.8.4",
+    "@rafterjs/watcher": "0.8.4",
+    "@types/express": "4.17.11",
+    "@types/express-serve-static-core": "4.17.19",
+    "@types/jest": "26.0.23",
+    "@types/lodash": "4.14.170",
+    "@types/node": "14.17.0",
+    "@types/nodemon": "1.19.0",
+    "@types/sinon": "10.0.0",
+    "@typescript-eslint/eslint-plugin": "4.25.0",
+    "@typescript-eslint/parser": "4.25.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "26.6.3",
+    "commitizen": "4.2.4",
+    "commitlint": "12.1.4",
+    "copyfiles": "2.4.1",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.27.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.23.3",
+    "eslint-plugin-prettier": "3.4.0",
+    "jest": "26.6.3",
+    "lerna": "4.0.0",
+    "nodemon": "2.0.7",
+    "prettier": "2.3.0",
+    "rimraf": "3.0.2",
+    "ts-jest": "26.5.6",
+    "ts-node": "9.1.1",
+    "ts-sinon": "2.0.1",
+    "typescript": "4.2.4"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+openapi: 3.0.0
+
+info:
+  description: This api provides relative covid test facilities information
+  version: "1.0.0"
+  title: Dude, Where's My Covid Test?
+  contact:
+    email: joshstuartx@gmail.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+
+paths:
+  /facilities:
+    get:
+      summary: Gets all covid facilities relative to the latitude and longitude
+      parameters:
+        - name: latitude
+          required: true
+          in: query
+          schema:
+            type: number
+        - name: longitude
+          required: true
+          in: query
+          schema:
+            type: number
+      responses:
+        '200':
+          description: Covid testing facilities with wait time and distance from caller
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/RelativeCovidTestingFacility'
+components:
+  schemas:
+    RelativeCovidTestingFacility:
+      type: object
+      properties:
+        distance:
+          type: number
+          description: The distance from the user to the testing facility as the crow flies in kilometers
+        travelTime:
+          type: number
+          description: Approximate travel time from the user to the testing facility based on the distance in minutes
+        facility:
+          $ref: '#/components/schemas/CovidTestingFacility'
+    CovidTestingFacility:
+      type: object
+      properties:
+        id:
+          type: string
+        site:
+          type: string
+        type:
+          type: string
+        details:
+          type: string
+        ageLimit:
+          type: string
+        location:
+          $ref: '#/components/schemas/Location'
+        phoneNumber:
+          type: string
+        website:
+          type: string
+        phoneNavailabilityumber:
+          type: string
+        requirements:
+          type: string
+        waitTime:
+          type: string
+        waitTimeDetails:
+          $ref: '#/components/schemas/WaitTimeDetails'
+
+    Location:
+      type: object
+      properties:
+        address:
+          type: string
+        suburb:
+          type: string
+        state:
+          type: string
+        latitude:
+          type: number
+        longitude:
+          type: number
+
+    WaitTimeDetails:
+      type: string
+      enum:
+        - overCapacity
+        - unknown
+        - short
+        - long
