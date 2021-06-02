@@ -1,6 +1,6 @@
-import React, { createContext, ReactElement, useContext, useState } from 'react';
+import React, { createContext, ReactElement, useContext, useEffect, useState } from 'react';
 import { ICovidTestingLocation } from './LocationsDao';
-import { useCovidTestingLocations } from './LocationsContext';
+import { useCovidTestingLocations } from './CovidTestingLocationsContext';
 
 export interface ISelectedLocationContext {
   selectedLocation?: ICovidTestingLocation;
@@ -37,6 +37,12 @@ export function SelectedLocationContextProvider({ children }: ISelectedFacilityC
       setSelectedLocation(undefined);
     }
   };
+
+  useEffect(() => {
+    if (!locations || locations?.length <= 0) {
+      setSelectedLocation(undefined);
+    }
+  }, [locations]);
 
   return (
     <SelectedLocationContext.Provider value={{ selectedLocation, setSelectedLocation: handleSetSelectedLocation }}>

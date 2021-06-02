@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export function Overlay({ message, open }: { message: string; open: boolean }) {
+export function FullScreenOverlay({ message, open }: { message: string; open: boolean }) {
   const classes = useStyles();
   return (
     <Backdrop className={classes.backdrop} open={open}>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Grid, IconButton, Modal, Paper } from '@material-ui/core';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { useSelectedLocation } from './SelectedLocationContext';
+import { useSelectedLocation } from '../SelectedLocationContext';
 import { LocationDetails } from './LocationDetails';
 import { Close } from '@material-ui/icons';
 

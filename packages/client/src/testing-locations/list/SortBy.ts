@@ -1,4 +1,4 @@
-import { ICovidTestingLocation } from './LocationsDao';
+import { ICovidTestingLocation } from '../LocationsDao';
 
 export enum SortBy {
   waitTime = 'waitTime',
