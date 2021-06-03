@@ -19,4 +19,6 @@ export interface ITestingFacility {
   website: string;
   availability: string;
   requirements: string;
+  waitTime?: number;
+  waitTimeDetails: string;
 }

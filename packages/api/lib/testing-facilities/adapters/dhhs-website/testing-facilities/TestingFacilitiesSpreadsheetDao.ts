@@ -14,7 +14,7 @@ export class TestingFacilitiesSpreadsheetDao {
   ) {}
 
   public async getTestingFacilities(): Promise<ITestingFacility[]> {
-    const { testingFacilitiesUrl } = this.config.covid.data.sources;
+    const { testingFacilitiesUrl } = this.config.covid.data.websites;
     this.logger.info(`Getting the latest covid testing facilities from ${testingFacilitiesUrl}`);
     const { data } = await this.apiHelper.get<ITestingFacilitiesSpreadsheet>(testingFacilitiesUrl);
 

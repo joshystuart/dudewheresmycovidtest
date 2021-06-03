@@ -8,8 +8,8 @@ allowing them to pick the quickest overall.
 
 ## Requirements
 
-* [NodeJs 14+](https://nodejs.org/en/download/)
-* [Yarn](https://classic.yarnpkg.com/en/)
+- [NodeJs 14+](https://nodejs.org/en/download/)
+- [Yarn](https://classic.yarnpkg.com/en/)
 
 ## Getting started
 

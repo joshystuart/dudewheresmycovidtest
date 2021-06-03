@@ -2,7 +2,6 @@ import React from 'react';
 import { Container } from '@material-ui/core';
 import { Routes } from './Routes';
 import { Nav } from './Nav';
-import { GeoLocationLoader } from './geolocation/GeoLocationLoader';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() =>
@@ -19,7 +18,6 @@ export function App() {
   return (
     <div className="App">
       <Nav />
-      <GeoLocationLoader />
       <Container className={classes.root} maxWidth={false}>
         <Routes />
       </Container>

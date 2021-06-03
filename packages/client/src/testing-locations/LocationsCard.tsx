@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import { Paper, Typography } from '@material-ui/core';
+import React from 'react';
+import { Paper } from '@material-ui/core';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { useCovidTestingLocations } from './LocationsContext';
-import { LocationsMap } from './LocationsMap';
-import { useGeolocation } from '../geolocation/useGeolocation';
-import { LocationsList } from './LocationsList';
-import { LocationsSortOptions } from './LocationsSortOptions';
-import { SortBy } from './SortBy';
+import { useCovidTestingLocations } from './CovidTestingLocationsContext';
+import { LocationsMap } from './map/LocationsMap';
+import { LocationsList } from './list/LocationsList';
+import { UserLocation } from './user/UserLocation';
+import { useUserContext } from './user/UserContext';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -23,22 +22,14 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export function LocationsCard() {
   const classes = useStyles();
-  const [sortBy, setSortBy] = useState(() => SortBy.distance);
-  const { locations } = useCovidTestingLocations();
-  const { latitude, longitude } = useGeolocation();
+  const { locations = [] } = useCovidTestingLocations();
+  const { coordinates } = useUserContext();
 
-  if (locations?.length && latitude && longitude) {
-    return (
-      <Paper className={classes.paper}>
-        <Typography variant="subtitle1">
-          Your latitude and longitude is: {latitude}, {longitude}
-        </Typography>
-        <LocationsMap locations={locations} longitude={longitude} latitude={latitude} />
-        <LocationsSortOptions sortBy={sortBy} handleSortBy={setSortBy} />
-        <LocationsList facilities={locations} sortBy={sortBy} />
-      </Paper>
-    );
-  }
-
-  return <></>;
+  return (
+    <Paper className={classes.paper}>
+      <UserLocation />
+      <LocationsMap locations={locations} longitude={coordinates?.longitude} latitude={coordinates?.latitude} />
+      <LocationsList facilities={locations} />
+    </Paper>
+  );
 }

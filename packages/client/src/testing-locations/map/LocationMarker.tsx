@@ -1,10 +1,10 @@
 import { Marker, OverlayView } from '@react-google-maps/api';
 import { useState } from 'react';
-import { useSelectedLocation } from './SelectedLocationContext';
-import { ICovidTestingLocation } from './LocationsDao';
+import { useSelectedLocation } from '../SelectedLocationContext';
+import { ICovidTestingLocation } from '../LocationsDao';
 import { Paper, Typography } from '@material-ui/core';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { getTimeLabel } from '../utils/DistanceTimeHelpers';
+import { getTimeLabel } from '../../utils/DistanceTimeHelpers';
 
 export type ILocationMarkerProps = {
   location: ICovidTestingLocation;

@@ -1,7 +1,7 @@
 import { IFacility } from './adapters/dhhs-website/Facility';
 import { DistanceHelpers } from './DistanceHelpers';
 
-export interface ICoordinates {
+export interface IUserLocationCoordinates {
   latitude: number;
   longitude: number;
 }
@@ -18,7 +18,7 @@ export type ICovidTestingLocation = {
 export class CovidTestingLocationTransformer {
   constructor(private readonly distanceHelpers: DistanceHelpers) {}
 
-  public convert(facilities: IFacility[], userCoordinates: ICoordinates): ICovidTestingLocation[] {
+  public convert(facilities: IFacility[], userCoordinates: IUserLocationCoordinates): ICovidTestingLocation[] {
     return facilities.map((facility) => {
       const distance = this.distanceHelpers.calculateDistanceFromCoordinates(
         facility.location.latitude,

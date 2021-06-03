@@ -1,4 +1,6 @@
 **/dist/**
+**/build/**
+**/builds/**
 node_modules
 coverage
 lerna.json

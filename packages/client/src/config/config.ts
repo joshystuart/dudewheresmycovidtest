@@ -1,17 +1,21 @@
+export type Libraries = ('drawing' | 'geometry' | 'localContext' | 'places' | 'visualization')[];
+
 export type IConfig = {
   api: {
     endpoint: string;
   };
-  maps: {
+  google: {
     apiKey: string;
+    libraries: Libraries;
   };
 };
 
 export const config: IConfig = {
   api: {
-    endpoint: process.env.REACT_APP_API_ENDPOINT || 'https://dix4olw2z3.execute-api.ap-southeast-2.amazonaws.com/prod',
+    endpoint: 'https://api.dudewheresmycovidtest.com',
   },
-  maps: {
+  google: {
     apiKey: process.env.REACT_APP_MAPS_API_KEY || 'get a google maps api key here',
+    libraries: ['places'],
   },
 };

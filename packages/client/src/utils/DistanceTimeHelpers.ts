@@ -1,5 +1,5 @@
 export function getTimeLabel(waitTime: number | undefined): string {
-  if (waitTime) {
+  if (typeof waitTime === 'number') {
     return `${Math.trunc(waitTime)} mins`;
   }
 
