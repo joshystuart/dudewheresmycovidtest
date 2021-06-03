@@ -26,12 +26,25 @@ export class TestingFacilitiesTransformer {
         website: entry.gsx$website.$t,
         availability: entry.gsx$serviceavailability.$t,
         requirements: entry.gsx$requirements.$t,
+        waitTime: this.getWaitTime(entry.gsx$delay.$t),
+        waitTimeDetails: entry.gsx$delaytext.$t,
       };
 
       covidTestingDtos.push(facility);
     }
 
     return covidTestingDtos;
+  }
+
+  private getWaitTime(waitTime: string | undefined): number | undefined {
+    if (waitTime !== '') {
+      const time = Number(waitTime);
+      if (time >= 0) {
+        return time;
+      }
+    }
+
+    return undefined;
   }
 }
 

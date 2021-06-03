@@ -1,10 +1,10 @@
 import React from 'react';
 import { Hidden, TableCell, TableRow } from '@material-ui/core';
-import { SortBy } from './SortBy';
+import { LocationSortHelpers } from './LocationSortHelpers';
 import { Alert } from '@material-ui/lab';
 
 export type ILocationsListEmptyMessageProps = {
-  sortBy: SortBy;
+  sortBy: LocationSortHelpers;
 };
 
 export function LocationsListEmptyMessage({ sortBy }: ILocationsListEmptyMessageProps) {
@@ -16,7 +16,7 @@ export function LocationsListEmptyMessage({ sortBy }: ILocationsListEmptyMessage
         <TableCell colSpan={5}>
           <Alert severity="info">
             {title}
-            {sortBy !== SortBy.distance && <div>{waitTimeMessage}</div>}
+            {sortBy !== LocationSortHelpers.distance && <div>{waitTimeMessage}</div>}
           </Alert>
         </TableCell>
       </Hidden>
@@ -24,7 +24,7 @@ export function LocationsListEmptyMessage({ sortBy }: ILocationsListEmptyMessage
         <TableCell colSpan={3}>
           <Alert severity="info">
             {title}
-            {sortBy !== SortBy.distance && <div>{waitTimeMessage}</div>}
+            {sortBy !== LocationSortHelpers.distance && <div>{waitTimeMessage}</div>}
           </Alert>
         </TableCell>
       </Hidden>

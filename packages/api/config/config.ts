@@ -3,10 +3,8 @@ import { IServerConfig } from 'rafter';
 export type ICovidAppConfig = IServerConfig & {
   covid: {
     data: {
-      sources: {
+      websites: {
         testingFacilitiesUrl: string;
-        statusListUrl: string;
-        waitTimesUrl: string;
       };
     };
   };
@@ -19,13 +17,10 @@ export const config = async (): Promise<ICovidAppConfig> => {
     },
     covid: {
       data: {
-        sources: {
+        websites: {
+          // TODO we should update it to use https://www.dhhs.vic.gov.au/testing-site-data which is what the website uses. That page just proxies the spreadsheet data, but it does mean they could deprecate the spreadsheet altogether
           testingFacilitiesUrl:
             'https://spreadsheets.google.com/feeds/list/1_tKN6yIxOUjqOOermICjxwhRExlhH3UTx8jsBWjxiy4/1/public/values?alt=json',
-          statusListUrl:
-            'https://spreadsheets.google.com/feeds/list/1_tKN6yIxOUjqOOermICjxwhRExlhH3UTx8jsBWjxiy4/2/public/values?alt=json',
-          waitTimesUrl:
-            'https://spreadsheets.google.com/feeds/list/1dx5fDWCKGSJM3L96jVyhksCIxeSPh3ig5VDowWRTPFs/4/public/values?alt=json',
         },
       },
     },

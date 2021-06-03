@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Grid, Paper, Table, TableBody, TableContainer, TableHead } from '@material-ui/core';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { ICovidTestingLocation } from '../LocationsDao';
-import { SortBy, sortFacilities } from './SortBy';
+import { LocationSortHelpers, sortFacilities } from './LocationSortHelpers';
 import { LocationsSortOptions } from './LocationsSortOptions';
 import { useCovidTestingLocations } from '../CovidTestingLocationsContext';
 import { LocationsListRow } from './LocationsListRow';
@@ -22,7 +22,7 @@ export type IFacilitiesListProps = {
 
 export function LocationsList({ facilities }: IFacilitiesListProps) {
   const classes = useStyles();
-  const [sortBy, setSortBy] = useState(SortBy.totalTime);
+  const [sortBy, setSortBy] = useState(LocationSortHelpers.totalTime);
   const { isLoading } = useCovidTestingLocations();
 
   if (isLoading) {

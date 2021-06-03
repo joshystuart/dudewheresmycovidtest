@@ -3,7 +3,7 @@ import { Hidden, TableCell, TableRow, Tooltip, Typography } from '@material-ui/c
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { ICovidTestingLocation } from '../LocationsDao';
 import { useSelectedLocation } from '../SelectedLocationContext';
-import { SortBy } from './SortBy';
+import { LocationSortHelpers } from './LocationSortHelpers';
 import { getDistanceLabel, getTimeLabel, getTotalTimeLabel } from '../../utils/DistanceTimeHelpers';
 import DriveEtaIcon from '@material-ui/icons/DriveEta';
 import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
@@ -52,7 +52,7 @@ export function getFacilityTypeIcon(type: string): JSX.Element | undefined {
 }
 
 export type ILocationsListRowProps = {
-  sortBy: SortBy;
+  sortBy: LocationSortHelpers;
   covidTestingLocation: ICovidTestingLocation;
 };
 
@@ -82,9 +82,11 @@ export function LocationsListRow({ covidTestingLocation, sortBy }: ILocationsLis
         <TableCell align="right">{getTotalTimeLabel(waitTime, travelTime)}</TableCell>
       </Hidden>
       <Hidden smUp>
-        {sortBy === SortBy.distance && <TableCell align="right">{getDistanceLabel(distance)}</TableCell>}
-        {sortBy === SortBy.waitTime && <TableCell align="right">{getTimeLabel(waitTime)}</TableCell>}
-        {sortBy === SortBy.totalTime && <TableCell align="right">{getTotalTimeLabel(waitTime, travelTime)}</TableCell>}
+        {sortBy === LocationSortHelpers.distance && <TableCell align="right">{getDistanceLabel(distance)}</TableCell>}
+        {sortBy === LocationSortHelpers.waitTime && <TableCell align="right">{getTimeLabel(waitTime)}</TableCell>}
+        {sortBy === LocationSortHelpers.totalTime && (
+          <TableCell align="right">{getTotalTimeLabel(waitTime, travelTime)}</TableCell>
+        )}
       </Hidden>
     </TableRow>
   );

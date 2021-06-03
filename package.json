@@ -22,7 +22,7 @@
     "update:all": "lerna run update:latest",
     "cz": "git-cz",
     "cz:retry": "git-cz --retry",
-    "release:api": "lerna run release --stream --scope @dudewheresmycovidtest/api"
+    "release": "lerna run release --stream --scope @dudewheresmycovidtest/api"
   },
   "dependencies": {
     "@rafterjs/cors-plugin": "0.8.4",
