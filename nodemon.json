@@ -1,0 +1,5 @@
+{
+  "watch": ["common", "cron", "sites"],
+  "ext": "ts,json",
+  "ignore": ["**/*.spec.ts"]
+}

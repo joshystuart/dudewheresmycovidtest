@@ -1,0 +1,44 @@
+{
+  "name": "@dwmc-site/api",
+  "private": true,
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "name": "Josh Stuart",
+      "email": "joshstuartx@gmail.com"
+    }
+  ],
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshystuart/dudewheresmycovidtest.git",
+    "directory": "packages/api"
+  },
+  "homepage": "https://github.com/joshystuart/dudewheresmycovidtest/tree/main",
+  "scripts": {
+    "build": "yarn clean && yarn build:config && yarn build:lib && yarn build:index && yarn build:copy && yarn build:types",
+    "build:config": "babel config --out-dir dist/config --extensions .js,.jsx,.ts,.tsx --source-maps",
+    "build:lib": "babel lib --out-dir dist/lib --extensions .js,.jsx,.ts,.tsx --source-maps",
+    "build:index": "babel index.ts --out-dir dist --extensions .js,.jsx,.ts,.tsx --source-maps",
+    "build:copy": "copyfiles package.json ./dist",
+    "build:types": "tsc --emitDeclarationOnly",
+    "clean": "rimraf dist",
+    "lint": "eslint \"./lib/**/*\" \"./config/**/*\" babel.config.js",
+    "lint:fix": "yarn lint --fix",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@dwmc-common/database": "0.0.1",
+    "@dwmc-common/dhhs-victoria-website-data": "0.0.1",
+    "@dwmc-common/testing-facilities": "0.0.1",
+    "rafter": "0.8.44"
+  },
+  "devDependencies": {},
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=14"
+  },
+  "gitHead": "a1f017d6435d2fd58ab8bfcaee868f5d63956807"
+}

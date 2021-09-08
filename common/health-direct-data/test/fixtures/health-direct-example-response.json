@@ -1,0 +1,4987 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/_search?filter.programs.codes=nhsd:/reference/common/program/covid19&requestContext.serviceDeliveryMethod=PHYSICAL&responseControl.limit=20&responseControl.offset=0"
+    }
+  },
+  "count": 949,
+  "offset": 0,
+  "limit": 20,
+  "_embedded": {
+    "healthcareServices": [
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/56804e2a-6cf1-42eb-8fd0-ab87d4251098"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/56804e2a-6cf1-42eb-8fd0-ab87d4251098/operationalStatus"
+          }
+        },
+        "id": "56804e2a-6cf1-42eb-8fd0-ab87d4251098",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "N/A",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY"],
+              "openFrom": "11:30:00",
+              "openTo": "12:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["TUESDAY"],
+              "openFrom": "11:30:00",
+              "openTo": "12:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["WEDNESDAY"],
+              "openFrom": "11:30:00",
+              "openTo": "12:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY"],
+              "openFrom": "11:30:00",
+              "openTo": "12:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["FRIDAY"],
+              "openFrom": "11:30:00",
+              "openTo": "12:30:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswAnzacDay",
+                  "label": "Anzac Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswLabourDay",
+                  "label": "Labour Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-06-14",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswQueensBirthday",
+                  "label": "Queen's Birthday - NSW"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Sydney",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/no",
+              "label": "No"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "5b7661fe-aaca-4b66-8952-2f8a383b7740",
+          "name": "Coolah Multi-Purpose Service"
+        },
+        "location": {
+          "id": "9f043118-a0a3-4b10-9c78-ec1536ee34ca",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "Martin Street",
+            "postcode": "2843",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/coolah;2843",
+              "label": "COOLAH",
+              "postcode": "2843"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/NSW",
+              "label": "NSW"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-31.821537",
+              "longitude": "149.7078043"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2020-12-25T01:58:46Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/b7a2ed63-f1cf-4895-90d2-5468896fd022"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/b7a2ed63-f1cf-4895-90d2-5468896fd022/operationalStatus"
+          }
+        },
+        "id": "b7a2ed63-f1cf-4895-90d2-5468896fd022",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "N/A",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["TUESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["WEDNESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["FRIDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswAnzacDay",
+                  "label": "Anzac Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswLabourDay",
+                  "label": "Labour Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-06-14",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswQueensBirthday",
+                  "label": "Queen's Birthday - NSW"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Sydney",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/no",
+              "label": "No"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "ac917d1f-165f-452b-a23b-8952739c3eda",
+          "name": "Walgett Multi-Purpose Health Service"
+        },
+        "location": {
+          "id": "6ed38f41-0e06-45f6-8f99-8a9abb3e6075",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine1": "Ambulance Bay",
+            "addressLine3": "141 Fox Street",
+            "postcode": "2832",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/walgett;2832",
+              "label": "WALGETT",
+              "postcode": "2832"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/NSW",
+              "label": "NSW"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-30.0306941",
+              "longitude": "148.1140673"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2020-12-25T02:05:52Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/24449d25-2951-41d2-a0d1-be62fa232431"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/24449d25-2951-41d2-a0d1-be62fa232431/operationalStatus"
+          }
+        },
+        "id": "24449d25-2951-41d2-a0d1-be62fa232431",
+        "displayName": "Call 0458 481 457 to make an appointment ",
+        "name": "Call 0458 481 457 to make an appointment ",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "0458 481 457",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "11:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["TUESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "11:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["WEDNESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "11:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "11:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["FRIDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "11:30:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswAnzacDay",
+                  "label": "Anzac Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswLabourDay",
+                  "label": "Labour Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-06-14",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswQueensBirthday",
+                  "label": "Queen's Birthday - NSW"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Sydney",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/yes",
+              "label": "Yes"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "bd8fc07d-a667-4b56-8b3c-0ef2df2d70f8",
+          "name": "Grenfell Drive-through Clinic"
+        },
+        "location": {
+          "id": "51797922-6ac2-46c6-a475-6de86fbd2bc7",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine1": "Grenfell Community Health",
+            "addressLine3": "80 Cowra Road",
+            "postcode": "2810",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/grenfell;2810",
+              "label": "GRENFELL",
+              "postcode": "2810"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/NSW",
+              "label": "NSW"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-33.8943554",
+              "longitude": "148.1651531"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-01-11T06:51:58Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/f335d299-7ee9-4019-b0f4-65359090d486"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/f335d299-7ee9-4019-b0f4-65359090d486/operationalStatus"
+          }
+        },
+        "id": "f335d299-7ee9-4019-b0f4-65359090d486",
+        "displayName": "Phone: 07 4171 6700 for an appointment",
+        "name": "Phone: 07 4171 6700 for an appointment",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "07 4171 6700",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldAnzacDay",
+                  "label": "Anzac Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-05-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldLabourDay",
+                  "label": "Labour Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldQueensBirthday",
+                  "label": "Queen's Birthday - QLD"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Brisbane",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/yes",
+              "label": "Yes"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "4418d09c-fe44-49fc-8f01-74795670ee74",
+          "name": "Nanango Nanango"
+        },
+        "location": {
+          "id": "2f56118e-c1da-409b-a292-7c73f90ba9cd",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "109 Brisbane Street",
+            "postcode": "4615",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/nanango;4615",
+              "label": "NANANGO",
+              "postcode": "4615"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/QLD",
+              "label": "QLD"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-26.6693687605198",
+              "longitude": "152.007260188468"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-01-08T04:41:07Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/3c72ad49-dbd8-492a-833b-9941d1213118"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/3c72ad49-dbd8-492a-833b-9941d1213118/operationalStatus"
+          }
+        },
+        "id": "3c72ad49-dbd8-492a-833b-9941d1213118",
+        "displayName": "Phone 07 4662 8888 for an appointment",
+        "name": "Phone 07 4662 8888 for an appointment",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "07 4662 8888",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldAnzacDay",
+                  "label": "Anzac Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-05-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldLabourDay",
+                  "label": "Labour Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldQueensBirthday",
+                  "label": "Queen's Birthday - QLD"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Brisbane",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/yes",
+              "label": "Yes"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "9926a1ff-8b26-4bd7-8914-fa29a56cb3ed",
+          "name": "Chinchilla Hospital"
+        },
+        "location": {
+          "id": "aa9d8a3c-b79e-4662-9b8b-db77fb8f4ce9",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "1 Slessar Street",
+            "postcode": "4413",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/chinchilla;4413",
+              "label": "CHINCHILLA",
+              "postcode": "4413"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/QLD",
+              "label": "QLD"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-26.7408185250586",
+              "longitude": "150.635152386546"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-01-08T05:31:34Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/e0ec78bc-6137-477f-aa42-480d78593172"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/e0ec78bc-6137-477f-aa42-480d78593172/operationalStatus"
+          }
+        },
+        "id": "e0ec78bc-6137-477f-aa42-480d78593172",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "N/A",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["TUESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["WEDNESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["FRIDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["SATURDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["SUNDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswAnzacDay",
+                  "label": "Anzac Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswLabourDay",
+                  "label": "Labour Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-06-14",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswQueensBirthday",
+                  "label": "Queen's Birthday - NSW"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Sydney",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/no",
+              "label": "No"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "ec1b2dc8-0c70-4114-9dc1-02408b7b3cbe",
+          "name": "Tottenham Multi-purpose Service"
+        },
+        "location": {
+          "id": "7d3009a1-3645-47c3-a286-6bc63bfebb46",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine2": "Lot 10",
+            "addressLine3": "Moondana Street",
+            "postcode": "2873",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/tottenham;2873",
+              "label": "TOTTENHAM",
+              "postcode": "2873"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/NSW",
+              "label": "NSW"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-32.2425881",
+              "longitude": "147.3558976"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2020-12-25T01:22:37Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/018bb7ae-ac84-4388-abc4-a4e76e099ddd"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/018bb7ae-ac84-4388-abc4-a4e76e099ddd/operationalStatus"
+          }
+        },
+        "id": "018bb7ae-ac84-4388-abc4-a4e76e099ddd",
+        "displayName": "Testing through the Emergency Department. Booking required. Phone 07 4578 2400 ",
+        "name": "Testing through the Emergency Department. Booking required. Phone 07 4578 2400 ",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "07 4578 2400",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldAnzacDay",
+                  "label": "Anzac Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-05-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldLabourDay",
+                  "label": "Labour Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldQueensBirthday",
+                  "label": "Queen's Birthday - QLD"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Brisbane",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/yes",
+              "label": "Yes"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "615db382-bbfc-40e4-aba1-3f9716d106f1",
+          "name": "Goondiwindi Hospital"
+        },
+        "location": {
+          "id": "80c7c8e9-acd7-41aa-b648-e917efb22a5a",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "4 Bowen Street",
+            "postcode": "4390",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/goondiwindi;4390",
+              "label": "GOONDIWINDI",
+              "postcode": "4390"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/QLD",
+              "label": "QLD"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-28.5479125522231",
+              "longitude": "150.302185522464"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-01-14T22:00:57Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/046b1097-9579-4bb7-b75e-e5bf46e4c61b"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/046b1097-9579-4bb7-b75e-e5bf46e4c61b/operationalStatus"
+          }
+        },
+        "id": "046b1097-9579-4bb7-b75e-e5bf46e4c61b",
+        "displayName": "Please phone ahead on 07 4166 9300. Drive through available. Children under three go to ED.",
+        "name": "Please phone ahead on 07 4166 9300. Drive through available. Children under three go to ED.",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "07 4166 9300",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["TUESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["WEDNESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["FRIDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["SATURDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["SUNDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldAnzacDay",
+                  "label": "Anzac Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-05-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldLabourDay",
+                  "label": "Labour Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldQueensBirthday",
+                  "label": "Queen's Birthday - QLD"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Brisbane",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/yes",
+              "label": "Yes"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "a1e16850-fa21-4f97-9394-b7ad108059fc",
+          "name": "Monto Hospital"
+        },
+        "location": {
+          "id": "ab524e24-1106-45db-8cc9-91e09eddb4c9",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "35 Flinders Street",
+            "postcode": "4630",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/monto;4630",
+              "label": "MONTO",
+              "postcode": "4630"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/QLD",
+              "label": "QLD"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-24.8659268",
+              "longitude": "151.1115382"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-01-19T07:41:00Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/27d7bb94-9584-4ce2-8e19-6d611b9d6fdf"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/27d7bb94-9584-4ce2-8e19-6d611b9d6fdf/operationalStatus"
+          }
+        },
+        "id": "27d7bb94-9584-4ce2-8e19-6d611b9d6fdf",
+        "displayName": "Please phone ahead on 07 4192 1133. Drive through available. Children under three go to ED.",
+        "name": "Please phone ahead on 07 4192 1133. Drive through available. Children under three go to ED.",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "07 4192 1133",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["TUESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["WEDNESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["FRIDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["SATURDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["SUNDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldAnzacDay",
+                  "label": "Anzac Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-05-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldLabourDay",
+                  "label": "Labour Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldQueensBirthday",
+                  "label": "Queen's Birthday - QLD"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Brisbane",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/yes",
+              "label": "Yes"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "69d2bf9d-c1a0-4b8d-91ca-0c652444dab9",
+          "name": "Childers Multipurpose Health Service"
+        },
+        "location": {
+          "id": "ef2d6c88-0876-457e-a715-5130429dc879",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "44 Broadhurst Street",
+            "postcode": "4660",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/childers;4660",
+              "label": "CHILDERS",
+              "postcode": "4660"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/QLD",
+              "label": "QLD"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-25.239461",
+              "longitude": "152.2708822"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-01-19T07:37:22Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/dd6482f3-27ed-478d-9649-77cd1a55694e"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/dd6482f3-27ed-478d-9649-77cd1a55694e/operationalStatus"
+          }
+        },
+        "id": "dd6482f3-27ed-478d-9649-77cd1a55694e",
+        "displayName": "Please phone ahead on 07 4165 7100. Drive through available. Children under three go to ED.",
+        "name": "Please phone ahead on 07 4165 7100. Drive through available. Children under three go to ED.",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "07 4165 7100",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["TUESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["WEDNESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["FRIDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["SATURDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["SUNDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldAnzacDay",
+                  "label": "Anzac Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-05-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldLabourDay",
+                  "label": "Labour Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldQueensBirthday",
+                  "label": "Queen's Birthday - QLD"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Brisbane",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/yes",
+              "label": "Yes"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "037f6d84-b356-4625-8c1d-ef08f95c4e8e",
+          "name": "Eidsvold Multipurpose Health Service"
+        },
+        "location": {
+          "id": "7546bec4-de61-486f-b94b-19a91894064a",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "Cracow Road",
+            "postcode": "4627",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/eidsvold;4627",
+              "label": "EIDSVOLD",
+              "postcode": "4627"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/QLD",
+              "label": "QLD"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-25.3825884",
+              "longitude": "151.1237493"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-01-19T07:25:50Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/b9e85943-6e0e-4794-a80c-6738347f13e6"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/b9e85943-6e0e-4794-a80c-6738347f13e6/operationalStatus"
+          }
+        },
+        "id": "b9e85943-6e0e-4794-a80c-6738347f13e6",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "N/A",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"],
+              "openFrom": "08:30:00",
+              "openTo": "15:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY", "TUESDAY", "WEDNESDAY"],
+              "openFrom": "08:30:00",
+              "openTo": "13:30:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswAnzacDay",
+                  "label": "Anzac Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswLabourDay",
+                  "label": "Labour Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-06-14",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswQueensBirthday",
+                  "label": "Queen's Birthday - NSW"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Sydney",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/no",
+              "label": "No"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "b0acad00-6c86-4439-9a8d-42c937963df8",
+          "name": "Kempsey Health Campus Clinic"
+        },
+        "location": {
+          "id": "dc5407e6-089b-4bca-adf9-7ef785cb0d7e",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine1": "Daisy Turner Centre",
+            "addressLine3": "119 River Street",
+            "postcode": "2440",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/kempsey;2440",
+              "label": "KEMPSEY",
+              "postcode": "2440"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/NSW",
+              "label": "NSW"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-31.0679214492407",
+              "longitude": "152.820254864493"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-01-30T04:01:46Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/6c863f4f-bb24-4ad2-9a18-1b26cfe74b77"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/6c863f4f-bb24-4ad2-9a18-1b26cfe74b77/operationalStatus"
+          }
+        },
+        "id": "6c863f4f-bb24-4ad2-9a18-1b26cfe74b77",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "N/A",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["TUESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["WEDNESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["FRIDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["SATURDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["SUNDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "HOLIDAY",
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "2021-09-27",
+              "holiday": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/waQueensBirthday",
+                  "label": "Queen's Birthday - WA"
+                }
+              }
+            },
+            {
+              "pattern": "HOLIDAY",
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "2021-12-25",
+              "holiday": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "pattern": "HOLIDAY",
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "2021-01-01",
+              "holiday": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "pattern": "HOLIDAY",
+              "openFrom": "08:00:00",
+              "openTo": "16:30:00",
+              "referenceDate": "2021-01-26",
+              "holiday": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-06-07",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/waWesternAustraliaDay",
+                  "label": "Western Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-03-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/waLabourDay",
+                  "label": "Labour Day - WA"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/waAnzacDay",
+                  "label": "Anzac Day - WA"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/waAnzacDayAdditionalDay",
+                  "label": "Anzac Day - Additional Day - WA"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Perth",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/no",
+              "label": "No"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "25a5f855-af99-431c-ba2c-238ca07702da",
+          "name": "Kununurra District Hospital"
+        },
+        "location": {
+          "id": "1b8f60ce-4734-4844-ac4f-7b5086c89243",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "96 Coolibah Drive",
+            "postcode": "6743",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/kununurra;6743",
+              "label": "KUNUNURRA",
+              "postcode": "6743"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/WA",
+              "label": "WA"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-15.7746661",
+              "longitude": "128.7366312"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-01-24T00:30:32Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/74806123-19a1-4952-943d-d8f4901b7ab5"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/74806123-19a1-4952-943d-d8f4901b7ab5/operationalStatus"
+          }
+        },
+        "id": "74806123-19a1-4952-943d-d8f4901b7ab5",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "N/A",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY", "FRIDAY"],
+              "openFrom": "09:00:00",
+              "openTo": "16:00:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswAnzacDay",
+                  "label": "Anzac Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswLabourDay",
+                  "label": "Labour Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-06-14",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswQueensBirthday",
+                  "label": "Queen's Birthday - NSW"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Sydney",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/no",
+              "label": "No"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "ad6942ba-eb53-4130-a7e5-905b7bf6ec8f",
+          "name": "Yagoona Drive-through clinic"
+        },
+        "location": {
+          "id": "fff994ed-95ff-4139-8a66-3359e139332b",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "487 Hume Highway",
+            "postcode": "2199",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/yagoona;2199",
+              "label": "YAGOONA",
+              "postcode": "2199"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/NSW",
+              "label": "NSW"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-33.9074875",
+              "longitude": "151.0207157"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-02-10T05:49:40Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/4f0a9d48-75ce-4e11-adb0-85a210672cfe"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/4f0a9d48-75ce-4e11-adb0-85a210672cfe/operationalStatus"
+          }
+        },
+        "id": "4f0a9d48-75ce-4e11-adb0-85a210672cfe",
+        "displayName": "Please book prior by calling 4062 1266.",
+        "name": "Please book prior by calling 4062 1266.",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "07 4062 5372",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY"],
+              "openFrom": "09:00:00",
+              "openTo": "12:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY"],
+              "openFrom": "14:00:00",
+              "openTo": "16:00:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldAnzacDay",
+                  "label": "Anzac Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-05-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldLabourDay",
+                  "label": "Labour Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldQueensBirthday",
+                  "label": "Queen's Birthday - QLD"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Brisbane",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/yes",
+              "label": "Yes"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "7cca716e-5ecf-45aa-b2ad-4b7f3d1ac458",
+          "name": "Forsayth Primary Health Clinic"
+        },
+        "location": {
+          "id": "0191d184-1c81-4f30-9f69-1c17b857e83e",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "Fourth Street",
+            "postcode": "4871",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/forsayth;4871",
+              "label": "FORSAYTH",
+              "postcode": "4871"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/QLD",
+              "label": "QLD"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-18.5897508976416",
+              "longitude": "143.603728478435"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-02-01T23:10:24Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/094c5855-c38c-49c8-8a6a-34fafe49b4fa"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/094c5855-c38c-49c8-8a6a-34fafe49b4fa/operationalStatus"
+          }
+        },
+        "id": "094c5855-c38c-49c8-8a6a-34fafe49b4fa",
+        "displayName": "Please call 07 4069 4260 prior to attending\n",
+        "name": "Please call 07 4069 4260 prior to attending\n",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "07 40694260",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["TUESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["WEDNESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["FRIDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldQueensBirthday",
+                  "label": "Queen's Birthday - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-05-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldLabourDay",
+                  "label": "Labour Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldAnzacDay",
+                  "label": "Anzac Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Brisbane",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/yes",
+              "label": "Yes"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "a3ae719e-0dcc-42ab-9da2-c95f7e1236bd",
+          "name": "Dauan Island Primary Health Care Centre"
+        },
+        "location": {
+          "id": "aac1b493-1586-47e7-b9c1-02e70920af2f",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine2": "Lot 16",
+            "postcode": "4875",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/dauan_island;4875",
+              "label": "DAUAN ISLAND",
+              "postcode": "4875"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/QLD",
+              "label": "QLD"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-9.4232835",
+              "longitude": "142.530806"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-02-01T23:08:09Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/4577bbd5-fc31-4dc3-9d59-b551e8c44f1d"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/4577bbd5-fc31-4dc3-9d59-b551e8c44f1d/operationalStatus"
+          }
+        },
+        "id": "4577bbd5-fc31-4dc3-9d59-b551e8c44f1d",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "07 4068 4144",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY"],
+              "openFrom": "09:00:00",
+              "openTo": "12:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["TUESDAY"],
+              "openFrom": "09:00:00",
+              "openTo": "12:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["WEDNESDAY"],
+              "openFrom": "09:00:00",
+              "openTo": "12:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY"],
+              "openFrom": "09:00:00",
+              "openTo": "12:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["FRIDAY"],
+              "openFrom": "09:00:00",
+              "openTo": "12:00:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldAnzacDay",
+                  "label": "Anzac Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-05-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldLabourDay",
+                  "label": "Labour Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldQueensBirthday",
+                  "label": "Queen's Birthday - QLD"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Brisbane",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/no",
+              "label": "No"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "31fa6cb0-4986-45c2-9ddd-d12903d9d748",
+          "name": "Tully Hospital COVID-19 drive-through clinic"
+        },
+        "location": {
+          "id": "6c2f9ff4-2e03-4bd1-837e-904b9f338e23",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "17 Bryant Street",
+            "postcode": "4854",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/tully;4854",
+              "label": "TULLY",
+              "postcode": "4854"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/QLD",
+              "label": "QLD"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-17.9271346",
+              "longitude": "145.9214302"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-02-01T22:22:19Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/fa0feffa-8a38-4da2-b8f2-7258bcb9f17d"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/fa0feffa-8a38-4da2-b8f2-7258bcb9f17d/operationalStatus"
+          }
+        },
+        "id": "fa0feffa-8a38-4da2-b8f2-7258bcb9f17d",
+        "displayName": "Appointment required, call 02 6370 3000",
+        "name": "Appointment required, call 02 6370 3000",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "02 6370 3000",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY"],
+              "openFrom": "14:00:00",
+              "openTo": "14:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["TUESDAY"],
+              "openFrom": "14:00:00",
+              "openTo": "14:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["WEDNESDAY"],
+              "openFrom": "14:00:00",
+              "openTo": "14:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY"],
+              "openFrom": "14:00:00",
+              "openTo": "14:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["FRIDAY"],
+              "openFrom": "14:00:00",
+              "openTo": "14:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["SATURDAY"],
+              "openFrom": "14:00:00",
+              "openTo": "14:30:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["SUNDAY"],
+              "openFrom": "14:00:00",
+              "openTo": "14:30:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswAnzacDay",
+                  "label": "Anzac Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswLabourDay",
+                  "label": "Labour Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-06-14",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswQueensBirthday",
+                  "label": "Queen's Birthday - NSW"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Sydney",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/yes",
+              "label": "Yes"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "2d57194f-8421-4488-b818-d17c7b0c618f",
+          "name": "Dunedoo Multi-purpose Service"
+        },
+        "location": {
+          "id": "5429345c-c54f-4b1c-8751-bdb4d172b82b",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "Digilah Street",
+            "postcode": "2844",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/dunedoo;2844",
+              "label": "DUNEDOO",
+              "postcode": "2844"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/NSW",
+              "label": "NSW"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-32.0170467",
+              "longitude": "149.3949054"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-02-10T01:52:17Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/ae726b03-557f-43ef-8b71-29f202c50100"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/ae726b03-557f-43ef-8b71-29f202c50100/operationalStatus"
+          }
+        },
+        "id": "ae726b03-557f-43ef-8b71-29f202c50100",
+        "displayName": "For appointment call 02 6728 9000. ",
+        "name": "For appointment call 02 6728 9000. ",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "02 6728 9000",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY"],
+              "openFrom": "08:30:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["TUESDAY"],
+              "openFrom": "08:30:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["WEDNESDAY"],
+              "openFrom": "08:30:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY"],
+              "openFrom": "08:30:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["FRIDAY"],
+              "openFrom": "08:30:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-27",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDayAdditionalDay",
+                  "label": "Christmas Day Additional Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswAnzacDay",
+                  "label": "Anzac Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswLabourDay",
+                  "label": "Labour Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-06-14",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswQueensBirthday",
+                  "label": "Queen's Birthday - NSW"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Sydney",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/yes",
+              "label": "Yes"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "c6bba575-8cfe-42b3-956e-c1c1799ac6de",
+          "name": "Warialda Multi-Purpose Service"
+        },
+        "location": {
+          "id": "3872c063-578a-483e-8c62-113c6a5e9e36",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "146 Long Street",
+            "postcode": "2402",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/warialda;2402",
+              "label": "WARIALDA",
+              "postcode": "2402"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/NSW",
+              "label": "NSW"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-29.5382919",
+              "longitude": "150.5772076"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-02-04T22:22:37Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/015e59ac-629b-48e7-8e28-ca723ae0d789"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/015e59ac-629b-48e7-8e28-ca723ae0d789/operationalStatus"
+          }
+        },
+        "id": "015e59ac-629b-48e7-8e28-ca723ae0d789",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "07 40604876",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["TUESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["WEDNESDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["THURSDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            },
+            {
+              "pattern": "WEEKLY",
+              "days": ["FRIDAY"],
+              "openFrom": "08:00:00",
+              "openTo": "17:00:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldQueensBirthday",
+                  "label": "Queen's Birthday - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-05-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldLabourDay",
+                  "label": "Labour Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/qldAnzacDay",
+                  "label": "Anzac Day - QLD"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Brisbane",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/no",
+              "label": "No"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "6b69a63d-9e1b-4351-8206-b45ae76450c5",
+          "name": "Pormpuraaw Primary Helath Care Centre"
+        },
+        "location": {
+          "id": "49ceed5c-94b5-4352-afb4-5872441b4c0e",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "8 Korka Street",
+            "postcode": "4892",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/pormpuraaw;4892",
+              "label": "PORMPURAAW",
+              "postcode": "4892"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/QLD",
+              "label": "QLD"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-14.8998627",
+              "longitude": "141.6199097"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-02-08T07:33:23Z"
+        }
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/688a275f-b230-4ae9-8728-09c2fd75a954"
+          },
+          "operationalStatus": {
+            "href": "https://api.nhsd.healthdirect.org.au/v5/healthcareServices/688a275f-b230-4ae9-8728-09c2fd75a954/operationalStatus"
+          }
+        },
+        "id": "688a275f-b230-4ae9-8728-09c2fd75a954",
+        "displayName": "Booking required via 1800 318 248. ",
+        "name": "Booking required via 1800 318 248. ",
+        "description": "COVID 19 clinic - only for people who have symptoms including fever and acute respiratory illness (e.g. sore throat, cough, shortness of breath or loss of smell or loss of taste)",
+        "serviceType": [
+          {
+            "idRef": "nhsd:/reference/taxonomies/snomed-servicetype/1136211000168103",
+            "label": "Infectious diseases service"
+          }
+        ],
+        "contacts": [
+          {
+            "value": "1800 318 248",
+            "valueType": {
+              "idRef": "nhsd:/reference/common/contactType/phone",
+              "label": "Phone"
+            },
+            "priority": 1,
+            "purpose": {
+              "idRef": "nhsd:/reference/common/providerLocationServiceContactPurpose/generalEnquiry",
+              "label": "General Enquiry"
+            },
+            "contactPerson": ""
+          }
+        ],
+        "calendar": {
+          "openRule": [
+            {
+              "pattern": "WEEKLY",
+              "days": ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY"],
+              "openFrom": "09:00:00",
+              "openTo": "13:00:00",
+              "referenceDate": "1900-01-01"
+            }
+          ],
+          "closedRule": [
+            {
+              "closedDate": "2021-06-14",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswQueensBirthday",
+                  "label": "Queen's Birthday - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-01",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/newYearsDay",
+                  "label": "New Year's Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-10-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswLabourDay",
+                  "label": "Labour Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-02",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/goodFriday",
+                  "label": "Good Friday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-04",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSunday",
+                  "label": "Easter Sunday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-03",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterSaturday",
+                  "label": "Easter Saturday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-05",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/easterMonday",
+                  "label": "Easter Monday"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/christmasDay",
+                  "label": "Christmas Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDay",
+                  "label": "Boxing Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-01-26",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/australiaDay",
+                  "label": "Australia Day"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-04-25",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.stateHolidays/nswAnzacDay",
+                  "label": "Anzac Day - NSW"
+                }
+              }
+            },
+            {
+              "closedDate": "2021-12-28",
+              "reason": {
+                "valueType": {
+                  "idRef": "nhsd:/reference/geo/AUS.nationalHolidays/boxingDayAdditionalDay",
+                  "label": "Boxing Day Additional Day"
+                }
+              }
+            }
+          ],
+          "timezone": "Australia/Sydney",
+          "alwaysOpen": false
+        },
+        "appointments": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/appointment/yes",
+              "label": "Yes"
+            },
+            "value": "yes"
+          }
+        ],
+        "programs": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/program/covid19",
+              "label": "COVID-19"
+            },
+            "value": "yes"
+          }
+        ],
+        "organisation": {
+          "id": "b0875e7d-26b4-4231-8a17-95f1e8f83d93",
+          "name": "Bombala Multi-Purpose Service"
+        },
+        "location": {
+          "id": "b1c9de5f-2d66-487f-bb09-a12100f89dd7",
+          "deliveryMethod": "PHYSICAL",
+          "physicalLocation": {
+            "addressLine3": "Wellington Street",
+            "postcode": "2632",
+            "suburb": {
+              "idRef": "nhsd:/reference/geo/AUS.suburbs/bombala;2632",
+              "label": "BOMBALA",
+              "postcode": "2632"
+            },
+            "state": {
+              "idRef": "nhsd:/reference/geo/AUS.states/NSW",
+              "label": "NSW"
+            },
+            "country": {
+              "idRef": "nhsd:/reference/geo/countries/AUS",
+              "label": "Australia"
+            },
+            "geocode": {
+              "latitude": "-36.9134704",
+              "longitude": "149.238376"
+            }
+          }
+        },
+        "billingOptions": [
+          {
+            "valueType": {
+              "idRef": "nhsd:/reference/common/feeAndBillingOption/noFee",
+              "label": "No Fee"
+            },
+            "value": "yes"
+          }
+        ],
+        "coverageLocationIndicator": false,
+        "_metadata": {
+          "updatedTime": "2021-02-17T21:45:10Z"
+        }
+      }
+    ]
+  },
+  "_status": {
+    "service": "NHSD.ConsumerService.1_0_0",
+    "sourceId": "28e25889-9327-4f7c-addd-881f4af3fc15",
+    "conversationId": "T-ad47e0ae-e795-4bcb-b01b-5cb8ecb464d5"
+  }
+}

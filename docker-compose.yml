@@ -1,0 +1,110 @@
+version: '3.7'
+
+volumes:
+  postgres:
+
+services:
+  # Where all the data is stored
+  postgres:
+    container_name: dwmc_postgres
+    image: "postgres:12"
+    environment:
+      POSTGRES_USER: "dwmc"
+      POSTGRES_PASSWORD: "password"
+      POSTGRES_DB: "dwmc"
+      PGDATA: "/data/postgres"
+    volumes:
+      - ./.postgres:/data/postgres
+      - ./dev/sql/db_create_tables.sql:/docker-entrypoint-initdb.d/db_create_tables.sql
+    ports:
+      - "15432:5432"
+    restart: always
+    networks:
+      dwmc:
+
+  # A base image for all the lambda services
+  lambda-base:
+    build:
+      context: .
+      dockerfile: BaseLambdaDockerfile
+    image: base:latest
+
+  # A serverless app that runs on AWS lambda and is used to get all the testing facilities.
+  cron-testing-facilities:
+    depends_on:
+      - postgres
+      - lambda-base
+    image: base:latest
+    container_name: dwmc_cron-testing-facilities
+    command:
+      - cron/testing-facilities/dist/index.handler
+    environment:
+      DWMC_DATABASE_USERNAME: "dwmc"
+      DWMC_DATABASE_PASSWORD: "password"
+      DWMC_DATABASE_HOST: "postgres"
+      DWMC_DATABASE_PORT: "5432"
+      DWMC_DATABASE: "dwmc"
+    ports:
+      - "6001:8080"
+    networks:
+      dwmc:
+
+# A serverless app that runs on AWS lambda and is used to get all the testing facility wait times.
+  cron-testing-wait-time:
+    depends_on:
+      - postgres
+      - lambda-base
+    image: base:latest
+    container_name: dwmc_cron-testing-wait-time
+    command:
+      - cron/testing-wait-time/dist/index.handler
+    environment:
+      DWMC_DATABASE_USERNAME: "dwmc"
+      DWMC_DATABASE_PASSWORD: "password"
+      DWMC_DATABASE_HOST: "postgres"
+      DWMC_DATABASE_PORT: "5432"
+      DWMC_DATABASE: "dwmc"
+    ports:
+      - "6002:8080"
+    networks:
+      dwmc:
+
+  # An expressjs version of the API. This is a more performant version of the serverless version, and is run on ECS/EC2.
+  api:
+    depends_on:
+      - postgres
+    build:
+      context: .
+      dockerfile: ApiDockerfile
+    container_name: dwmc_api
+    environment:
+      DWMC_API_PORT: "5000"
+      DWMC_DATABASE_USERNAME: "dwmc"
+      DWMC_DATABASE_PASSWORD: "password"
+      DWMC_DATABASE_HOST: "postgres"
+      DWMC_DATABASE_PORT: "5432"
+      DWMC_DATABASE: "dwmc"
+    ports:
+      - "5000:5000"
+    networks:
+      dwmc:
+
+  # The UI
+  client:
+    depends_on:
+      - api
+    build:
+      context: .
+      dockerfile: ClientDockerfile
+    container_name: dwmc_api
+    environment:
+      REACT_APP_API_ENDPOINT: "http://localhost:5000"
+      REACT_APP_MAPS_API_KEY: "password"
+      SKIP_PREFLIGHT_CHECK: "true"
+    ports:
+      - "5001:5001"
+    networks:
+      dwmc:
+
+networks:
+  dwmc:

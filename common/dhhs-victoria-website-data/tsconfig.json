@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "ES6",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "./dist",
+    "skipLibCheck": true
+  },
+  "include": ["./lib", "./config"],
+  "exclude": ["./dist", "./test", "./**/*.spec.ts"]
+}

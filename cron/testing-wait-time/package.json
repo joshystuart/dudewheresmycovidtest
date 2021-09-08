@@ -1,0 +1,48 @@
+{
+  "name": "@dwmc-cron/testing-wait-time",
+  "private": true,
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "name": "Josh Stuart",
+      "email": "joshstuartx@gmail.com"
+    }
+  ],
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshystuart/dudewheresmycovidtest.git",
+    "directory": "cron/wait-time"
+  },
+  "homepage": "https://github.com/joshystuart/dudewheresmycovidtest/tree/main",
+  "scripts": {
+    "build": "yarn clean && yarn build:config && yarn build:lib && yarn build:index && yarn build:copy && yarn build:types",
+    "build:docker": "yarn build && docker build --no-cache -t dudewheresmycovidtest-etl ",
+    "build:config": "babel config --out-dir dist/config --extensions .js,.jsx,.ts,.tsx --source-maps",
+    "build:lib": "babel lib --out-dir dist/lib --extensions .js,.jsx,.ts,.tsx --source-maps",
+    "build:index": "babel {index,dev}.ts --out-dir dist --extensions .js,.jsx,.ts,.tsx --source-maps",
+    "build:copy": "copyfiles package.json ./dist",
+    "build:types": "tsc --emitDeclarationOnly",
+    "clean": "rimraf dist",
+    "lint": "eslint \"./lib/**/*\" \"./config/**/*\" babel.config.js",
+    "lint:fix": "yarn lint --fix",
+    "start": "sam local invoke 'getCovidTestingFacilities'",
+    "start:dev": "node dist/dev.js",
+    "release": "yarn build:docker && docker tag dudewheresmycovidtest-etl:latest 148982226388.dkr.ecr.ap-southeast-2.amazonaws.com/dudewheresmycovidtest-etl:latest && docker push 148982226388.dkr.ecr.ap-southeast-2.amazonaws.com/dudewheresmycovidtest-etl:latest"
+  },
+  "dependencies": {
+    "@dwmc-common/database": "0.0.1",
+    "@dwmc-common/dhhs-victoria-website-data": "0.0.1",
+    "@rafterjs/lambda": "0.8.44"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.76"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=14"
+  },
+  "gitHead": "a1f017d6435d2fd58ab8bfcaee868f5d63956807"
+}
