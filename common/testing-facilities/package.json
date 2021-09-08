@@ -1,0 +1,35 @@
+{
+  "name": "@dwmc-common/testing-facilities",
+  "private": true,
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "name": "Josh Stuart",
+      "email": "joshstuartx@gmail.com"
+    }
+  ],
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshystuart/dudewheresmycovidtest.git",
+    "directory": "packages/testing-facilities"
+  },
+  "homepage": "https://github.com/joshystuart/dudewheresmycovidtest/tree/main",
+  "scripts": {
+    "build": "yarn clean && yarn build:lib && yarn build:index && yarn build:types",
+    "build:lib": "babel lib --out-dir dist/lib --extensions .js,.jsx,.ts,.tsx --source-maps",
+    "build:index": "babel index.ts --out-dir dist --extensions .js,.jsx,.ts,.tsx --source-maps",
+    "build:types": "tsc --emitDeclarationOnly",
+    "clean": "rimraf dist",
+    "lint": "eslint \"./lib/**/*\" babel.config.js",
+    "lint:fix": "yarn lint --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=14"
+  }
+}

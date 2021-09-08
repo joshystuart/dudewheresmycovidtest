@@ -1,3 +1,5 @@
+.env
+.secrets
 builds
 coverage
 logs
@@ -19,3 +21,4 @@ build
 npm-debug.log*
 nohup.out
 stats.json
+.postgres

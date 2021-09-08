@@ -1,0 +1,49 @@
+{
+  "name": "@dwmc-common/database",
+  "private": true,
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "name": "Josh Stuart",
+      "email": "joshstuartx@gmail.com"
+    }
+  ],
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshystuart/dudewheresmycovidtest.git",
+    "directory": "packages/testing-facilities"
+  },
+  "homepage": "https://github.com/joshystuart/dudewheresmycovidtest/tree/main",
+  "scripts": {
+    "build": "yarn clean && yarn build:config && yarn build:lib && yarn build:index && yarn build:types",
+    "build:config": "babel config --out-dir dist/config --extensions .js,.jsx,.ts,.tsx --source-maps",
+    "build:lib": "babel lib --out-dir dist/lib --extensions .js,.jsx,.ts,.tsx --source-maps",
+    "build:index": "babel index.ts --out-dir dist --extensions .js,.jsx,.ts,.tsx --source-maps",
+    "build:types": "tsc --emitDeclarationOnly",
+    "clean": "rimraf dist",
+    "lint": "eslint \"./lib/**/*\" babel.config.js",
+    "lint:fix": "yarn lint --fix"
+  },
+  "dependencies": {
+    "@dwmc-common/testing-facilities": "0.0.1",
+    "pg": "8.6.0",
+    "rafter": "0.8.44",
+    "reflect-metadata": "0.1.13",
+    "sequelize": "6.6.2",
+    "sequelize-typescript": "2.1.0",
+    "uuid": "8.3.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "7.14.2",
+    "@types/sequelize": "4.28.9",
+    "@types/validator": "13.1.3",
+    "@types/uuid": "8.3.0"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=14"
+  }
+}
