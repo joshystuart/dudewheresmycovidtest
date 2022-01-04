@@ -16,8 +16,8 @@ export function UserLocation() {
   return (
     <Grid className={classes.root} container spacing={3}>
       <Grid item xs={12}>
-        <Typography variant="body1" align="left">
-          Avoid long wait times when planning a trip to a testing facility.
+        <Typography variant="h5" component="h2" align="left">
+          Avoid long wait times when planning a trip to a COVID testing facility in Victoria
         </Typography>
       </Grid>
       <Grid item xs={12}>

@@ -1,7 +1,7 @@
-import React from 'react';
 import { Grid } from '@material-ui/core';
-import { LocationsCard } from '../testing-locations/LocationsCard';
+import React from 'react';
 import { AppContextProvider } from '../AppContext';
+import { LocationsCard } from '../testing-locations/LocationsCard';
 
 export function HomeScreen() {
   return (
