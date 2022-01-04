@@ -96,10 +96,10 @@ services:
     build:
       context: .
       dockerfile: ClientDockerfile
-    container_name: dwmc_api
+    container_name: dwmc_client
     environment:
       REACT_APP_API_ENDPOINT: "http://localhost:5000"
-      REACT_APP_MAPS_API_KEY: "password"
+      REACT_APP_MAPS_API_KEY: "CREATE_YOUR_OWN_KEY"
       SKIP_PREFLIGHT_CHECK: "true"
     ports:
       - "5001:5001"

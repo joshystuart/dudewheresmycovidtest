@@ -5,10 +5,9 @@ RUN #npm install -g yarn
 WORKDIR /usr/src/app
 
 COPY common  ./common
-COPY sites/api  ./sites/api
+COPY sites/client  ./sites/client
 COPY lerna.json package.json tsconfig.json yarn.lock  ./
 
-# Install NPM dependencies for function
-RUN yarn bootstrap && yarn build && yarn clean:node_modules && yarn bootstrap:prod
+RUN yarn bootstrap && yarn build
 
-CMD ["node", "sites/api/dist/index.js"]
+CMD ["yarn", "start:site:client"]
