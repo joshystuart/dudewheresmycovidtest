@@ -1,0 +1,34 @@
+{
+  "extends": ["config:base"],
+  "rebaseWhen": "auto",
+  "rebaseLabel": "rebase",
+  "semanticCommits": true,
+  "requiredStatusChecks": [],
+  "ignoreDeps": [],
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch",
+      "automerge": false
+    },
+    {
+      "packagePatterns": ["eslint"],
+      "groupName": "eslint"
+    },
+    {
+      "packagePatterns": ["@types"],
+      "groupName": "types"
+    },
+    {
+      "packagePatterns": ["@dwmc-common", "@dwmc-cron"],
+      "automerge": false
+    }
+  ]
+}
