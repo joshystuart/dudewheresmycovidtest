@@ -1,16 +1,18 @@
-import React from 'react';
 import { FormGroup, Typography } from '@material-ui/core';
-import { LocationsSortOptions } from './LocationsSortOptions';
-import { LocationsFilterOptions } from './LocationsFilterOptions';
-import { Paper } from '../../components/Paper';
-import { SortBy } from './SortBy';
-import { FilterBy } from './FilterBy';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { ViewBy } from './LocationsList';
 import { ToggleButton, ToggleButtonGroup } from '@material-ui/lab';
+import React from 'react';
+import { Paper } from '../../components/Paper';
 import { useCovidTestingLocations } from '../CovidTestingLocationsContext';
 import { useUserContext } from '../user/UserContext';
+import { FilterByStatus } from './filters/FilterByStatus';
+import { FilterByTypes } from './filters/FilterByTypes';
+import { LocationsStatusFilterOptions } from './filters/LocationsStatusFilterOptions';
+import { LocationsTypesFilterOptions } from './filters/LocationsTypesFilterOptions';
 import { LoadingListOptions } from './LoadingListOptions';
+import { ViewBy } from './LocationsList';
+import { LocationsSortOptions } from './LocationsSortOptions';
+import { SortBy } from './SortBy';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -27,8 +29,10 @@ const useStyles = makeStyles((theme: Theme) =>
 export type ILocationsListOptionsProps = {
   sortBy: SortBy;
   setSortBy: (sortBy: SortBy) => void;
-  filterBy: FilterBy;
-  setFilterBy: (filterBy: FilterBy) => void;
+  filterByTypes: FilterByTypes;
+  setFilterByTypes: (filterBy: FilterByTypes) => void;
+  filterByStatus: FilterByStatus;
+  setFilterByStatus: (filterBy: FilterByStatus) => void;
   viewBy: ViewBy;
   setViewBy: (viewBy: ViewBy) => void;
 };
@@ -36,8 +40,10 @@ export type ILocationsListOptionsProps = {
 export function LocationsListOptions({
   sortBy,
   setSortBy,
-  setFilterBy,
-  filterBy,
+  setFilterByTypes,
+  filterByTypes,
+  setFilterByStatus,
+  filterByStatus,
   viewBy,
   setViewBy,
 }: ILocationsListOptionsProps) {
@@ -54,7 +60,8 @@ export function LocationsListOptions({
       <Typography variant="subtitle1">Show me:</Typography>
       <FormGroup row className={classes.formGroup}>
         <LocationsSortOptions sortBy={sortBy} handleSortBy={setSortBy} />
-        <LocationsFilterOptions filterBy={filterBy} handleFilter={setFilterBy} />
+        <LocationsTypesFilterOptions filterByTypes={filterByTypes} handleFilter={setFilterByTypes} />
+        <LocationsStatusFilterOptions filterByStatus={filterByStatus} handleFilter={setFilterByStatus} />
       </FormGroup>
       <ToggleButtonGroup
         className={classes.viewBy}

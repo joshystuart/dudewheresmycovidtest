@@ -11,7 +11,9 @@ export interface ITestingWaitTime {
 
 export type INewTestingWaitTime = Optional<ITestingWaitTime, 'id'>;
 
-@Table
+@Table({
+  tableName: 'TestingWaitTimes',
+})
 export class TestingWaitTime extends Model<ITestingWaitTime, INewTestingWaitTime> {
   @BelongsTo(() => TestingFacility)
   public testingFacility: ITestingFacility;

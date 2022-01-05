@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import { Banner } from '../components/Banner';
 import { useCovidTestingLocations } from './CovidTestingLocationsContext';
 import { LocationDetailsModal } from './details/LocationDetailsModal';
-import { FilterBy, filterFacilities } from './list/FilterBy';
+import { FilterByStatus, filterFacilitiesByStatus } from './list/filters/FilterByStatus';
+import { FilterByTypes, filterFacilitiesByType } from './list/filters/FilterByTypes';
 import { LocationsList, ViewBy } from './list/LocationsList';
 import { LocationsListOptions } from './list/LocationsListOptions';
 import { SortBy, sortFacilities } from './list/SortBy';
@@ -27,11 +28,12 @@ export function LocationsCard() {
   const { locations = [] } = useCovidTestingLocations();
   const { coordinates } = useUserContext();
 
-  const [sortBy, setSortBy] = useState(SortBy.distance);
-  const [filterBy, setFilterBy] = useState(FilterBy.all);
+  const [sortBy, setSortBy] = useState(SortBy.totalTime);
+  const [filterByTypes, setFilterByTypes] = useState(FilterByTypes.all);
+  const [filterByStatus, setFilterByStatus] = useState(FilterByStatus.OPEN);
   const [viewBy, setViewBy] = useState(() => ViewBy.list);
 
-  const filteredFacilities = filterFacilities(locations, filterBy);
+  const filteredFacilities = filterFacilitiesByType(filterFacilitiesByStatus(locations, filterByStatus), filterByTypes);
   const sortedCovidTestingLocations = sortFacilities(filteredFacilities, sortBy);
 
   return (
@@ -41,14 +43,16 @@ export function LocationsCard() {
       <LocationsListOptions
         sortBy={sortBy}
         setSortBy={setSortBy}
-        filterBy={filterBy}
-        setFilterBy={setFilterBy}
+        filterByTypes={filterByTypes}
+        setFilterByTypes={setFilterByTypes}
+        filterByStatus={filterByStatus}
+        setFilterByStatus={setFilterByStatus}
         viewBy={viewBy}
         setViewBy={setViewBy}
       />
       <Banner
-        title="NOTE"
-        message="Victoria Health are not currently reporting 'wait time' data. Unfortunately this means I cannot provide accurate estimates on wait times at testing facilities. I am working on a solution, but for now, do not trust the 'wait times' listed. Sorry for the inconvenience."
+        title="Please note"
+        message="Victoria Health are not currently reporting 'wait time' data for every testing facility. I realise this is extremely frustrating, but without an official data source for wait times, I cannot provide accurate estimates for every site. Also, due to the current testing demand, I'm not 100% sure how accurate the wait times are, so please plan accordingly. Sorry for the inconvenience."
       />
       {viewBy === ViewBy.map && (
         <LocationsMap

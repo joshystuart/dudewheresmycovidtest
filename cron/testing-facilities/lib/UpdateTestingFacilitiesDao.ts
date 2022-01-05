@@ -1,12 +1,10 @@
-import { ILogger } from '@rafterjs/logger-plugin';
 import { Database, TestingFacilityDao } from '@dwmc-common/database';
-import { HealthDirectTestingFacilitiesDao } from '@dwmc-common/health-direct-data';
 import { DhhsVictoriaTestingFacilitiesApiDao } from '@dwmc-common/dhhs-victoria-website-data';
+import { ILogger } from '@rafterjs/logger-plugin';
 
 export class UpdateTestingFacilitiesDao {
   constructor(
     private readonly dhhsVictoriaTestingFacilitiesApiDao: DhhsVictoriaTestingFacilitiesApiDao,
-    private readonly healthDirectTestingFacilitiesDao: HealthDirectTestingFacilitiesDao,
     private readonly testingFacilityDao: TestingFacilityDao,
     private readonly database: Database,
     private readonly logger: ILogger,

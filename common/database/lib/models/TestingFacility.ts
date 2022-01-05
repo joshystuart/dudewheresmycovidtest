@@ -20,6 +20,7 @@ export enum Status {
   CLOSED = 'CLOSED',
   TEMPORARILY_CLOSED = 'TEMPORARILY_CLOSED',
   AT_CAPACITY = 'AT_CAPACITY',
+  UNKNOWN = 'UNKNOWN',
 }
 
 export interface ITestingFacility {
@@ -44,7 +45,9 @@ export interface ITestingFacility {
 
 export type INewTestingFacility = Optional<ITestingFacility, 'id'>;
 
-@Table
+@Table({
+  tableName: 'TestingFacilities',
+})
 export class TestingFacility extends Model<ITestingFacility, INewTestingFacility> {
   @HasMany(() => TestingWaitTime)
   public testingWaitTimes: TestingWaitTime[];

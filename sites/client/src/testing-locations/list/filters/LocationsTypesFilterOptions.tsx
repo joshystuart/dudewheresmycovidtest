@@ -1,32 +1,33 @@
 import React from 'react';
 import { FormControl, InputLabel, MenuItem, Select } from '@material-ui/core';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { FilterBy } from './FilterBy';
+import { FilterByTypes } from './FilterByTypes';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     formControl: {
       margin: theme.spacing(0),
-      padding: 0,
       [theme.breakpoints.up('xs')]: {
         width: '100%',
+        marginBottom: '20px',
       },
       [theme.breakpoints.up('sm')]: {
+        marginRight: theme.spacing(2),
         width: '200px',
       },
     },
   }),
 );
 
-export type ILocationsFilterOptionsProps = {
-  handleFilter: (filterBy: FilterBy) => void;
-  filterBy: FilterBy;
+export type ILocationsFilterTypesOptionsProps = {
+  handleFilter: (filterBy: FilterByTypes) => void;
+  filterByTypes: FilterByTypes;
 };
 
-export function LocationsFilterOptions({ handleFilter, filterBy }: ILocationsFilterOptionsProps) {
+export function LocationsTypesFilterOptions({ handleFilter, filterByTypes }: ILocationsFilterTypesOptionsProps) {
   const classes = useStyles();
   const handleOnSortChange = (event: React.ChangeEvent<{ name?: string; value: unknown }>, child: React.ReactNode) => {
-    handleFilter(event.target.value as FilterBy);
+    handleFilter(event.target.value as FilterByTypes);
   };
   return (
     <FormControl variant="outlined" className={classes.formControl} size="small">
@@ -35,13 +36,13 @@ export function LocationsFilterOptions({ handleFilter, filterBy }: ILocationsFil
         id="filter-select"
         labelId="filter-select-label"
         label="Types"
-        value={filterBy}
+        value={filterByTypes}
         onChange={handleOnSortChange}
       >
-        <MenuItem value={FilterBy.all}>All sites</MenuItem>
-        <MenuItem value={FilterBy.clinics}>Clinics</MenuItem>
-        <MenuItem value={FilterBy.driveThrough}>Drive through</MenuItem>
-        <MenuItem value={FilterBy.hospitals}>Hospitals</MenuItem>
+        <MenuItem value={FilterByTypes.all}>All sites</MenuItem>
+        <MenuItem value={FilterByTypes.clinics}>Clinics</MenuItem>
+        <MenuItem value={FilterByTypes.driveThrough}>Drive through</MenuItem>
+        <MenuItem value={FilterByTypes.hospitals}>Hospitals</MenuItem>
       </Select>
     </FormControl>
   );

@@ -7,6 +7,7 @@ export enum Status {
   CLOSED = 'CLOSED',
   TEMPORARILY_CLOSED = 'TEMPORARILY_CLOSED',
   AT_CAPACITY = 'AT_CAPACITY',
+  UNKNOWN = 'UNKNOWN',
 }
 
 export interface ITestingFacility {

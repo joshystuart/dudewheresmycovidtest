@@ -17,22 +17,28 @@ export class TestingFacilityWaitTimeTransformer {
         const testingFacility = await this.testingFacilityDao.findBySite(facility.site);
 
         if (testingFacility) {
+          let testingWaitTime: INewTestingWaitTime | undefined;
+
           if (facility.currentWaitTime) {
-            const testingWaitTime = {
+            testingWaitTime = {
               testingFacilityId: testingFacility.get('id'),
               waitTime: facility.currentWaitTime,
-              waitTimeDescription: facility.currentWaitTimeDescription,
             };
 
-            testingWaitTimes.push({
-              testingFacility,
-              testingWaitTime,
-            });
+            testingFacility.set('currentWaitTime', facility.currentWaitTime);
           } else {
-            testingWaitTimes.push({
-              testingFacility,
-            });
+            // set to null if there's no wait time
+            testingFacility.set('currentWaitTime', null);
           }
+
+          // update the description and status on all facilities
+          testingFacility.set('currentWaitTimeDescription', facility.currentWaitTimeDescription);
+          testingFacility.set('status', facility.status);
+
+          testingWaitTimes.push({
+            testingFacility,
+            testingWaitTime,
+          });
         } else {
           this.logger.error(
             `WaitTimeSchemaTransformer::convert failed to find the testing site for ${facility.site}`,

@@ -33,7 +33,6 @@
   "dependencies": {
     "@dwmc-common/database": "0.0.1",
     "@dwmc-common/dhhs-victoria-website-data": "0.0.1",
-    "@dwmc-common/health-direct-data": "0.0.1",
     "@rafterjs/lambda": "0.8.62",
     "rafter": "0.8.62"
   },

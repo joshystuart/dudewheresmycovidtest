@@ -33,9 +33,7 @@ export default class CovidTestingFacilitiesController extends JsonController {
 
   public async index(request: IRequest & Request<any, any, any, RequestQuery>, response: Response): Promise<void> {
     const { latitude, longitude, state } = request.query;
-    this.logger.debug(`Proxying api request through to the lambda helper for ${longitude}, ${latitude}`);
-
-    // TODO validate the request better
+    this.logger.debug(`Getting testing facilities relative to lat(${latitude}), long(${longitude})`);
 
     if (typeof latitude !== 'undefined' && typeof longitude !== 'undefined' && typeof state !== 'undefined') {
       const data = await this.covidTestingLocationsDao.getTestingFacilities(longitude, latitude, state);

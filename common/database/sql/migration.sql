@@ -1,4 +1,8 @@
-INSERT INTO "TestWaitTimes" ("testingFacilityId", "waitTimeDetails", "waitTime", "createdAt", "updatedAt")
-SELECT t.id, w."waitTimeDetails", w."waitTime", w."createdAt", w."updatedAt"
-FROM "TestingFacilities" t
-         JOIN "WaitTimes" w ON t.site = w."siteName";
+-- New columns 2022-01-05
+alter table "TestingFacilities"
+    add "currentWaitTimeDescription" text;
+
+alter table "TestingFacilities"
+    add status varchar(255);
+
+UPDATE "TestingFacilities" SET status = 'UNKNOWN';

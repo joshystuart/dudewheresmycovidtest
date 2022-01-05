@@ -23,7 +23,8 @@
     "build:types": "tsc --emitDeclarationOnly",
     "clean": "rimraf dist",
     "lint": "eslint \"./lib/**/*\" babel.config.js",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "migration:generate": "node ./dist/lib/migration/generate.js"
   },
   "dependencies": {
     "@dwmc-common/testing-facilities": "0.0.1",

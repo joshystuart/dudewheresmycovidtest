@@ -8,7 +8,7 @@ export type IDatabaseConfig = {
   };
 };
 
-export const config = async (): Promise<IDatabaseConfig> => {
+export const config = (): IDatabaseConfig => {
   return {
     database: {
       username: process.env.DWMC_DATABASE_USERNAME || 'dwmc',
