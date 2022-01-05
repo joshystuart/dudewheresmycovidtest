@@ -7,7 +7,7 @@ services:
   # Where all the data is stored
   postgres:
     container_name: dwmc_postgres
-    image: "postgres:12"
+    image: "postgres:14"
     environment:
       POSTGRES_USER: "dwmc"
       POSTGRES_PASSWORD: "password"
