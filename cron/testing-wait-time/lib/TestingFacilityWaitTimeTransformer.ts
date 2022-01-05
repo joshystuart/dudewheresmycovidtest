@@ -21,6 +21,7 @@ export class TestingFacilityWaitTimeTransformer {
             const testingWaitTime = {
               testingFacilityId: testingFacility.get('id'),
               waitTime: facility.currentWaitTime,
+              waitTimeDescription: facility.currentWaitTimeDescription,
             };
 
             testingWaitTimes.push({

@@ -1,5 +1,5 @@
+import { INewTestingFacility, State, Status } from '@dwmc-common/database';
 import { ILogger } from '@rafterjs/logger-plugin';
-import { INewTestingFacility, State } from '@dwmc-common/database';
 
 import { FacilityIdHelper } from '../../FacilityIdHelper';
 import {
@@ -34,6 +34,12 @@ export class DhhsVictoriaTestingFacilitiesApiTransformer {
         availability: this.getFieldValue(entry.Service_Availability),
         requirements: this.getFieldValue(entry.Requirements),
         currentWaitTime: this.getCurrentWaitTime(this.getFieldValue(entry.Delay)),
+        currentWaitTimeDescription: entry.DelayText,
+        status: this.getStatus(
+          this.getFieldValue(entry.Delay),
+          this.getFieldValue(entry.DelayText),
+          this.getFieldValue(entry.Status),
+        ),
       };
 
       testingFacilities.push(facility);
@@ -72,6 +78,22 @@ export class DhhsVictoriaTestingFacilitiesApiTransformer {
       default:
         return State.WA;
     }
+  }
+
+  private getStatus(delay: string, delayTest: string, status: string): Status {
+    if (delay === '-1') {
+      if (delayTest === 'Over capacity - no further accepted') {
+        return Status.AT_CAPACITY;
+      }
+
+      return Status.TEMPORARILY_CLOSED;
+    }
+
+    if (status === 'Open') {
+      return Status.OPEN;
+    }
+
+    return Status.CLOSED;
   }
 
   private getFieldValue(field: string | null): string {
