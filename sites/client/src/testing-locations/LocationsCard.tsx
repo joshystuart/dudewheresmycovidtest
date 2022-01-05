@@ -52,7 +52,7 @@ export function LocationsCard() {
       />
       <Banner
         title="Please note"
-        message="Victoria Health are not currently reporting 'wait time' data for every testing facility. I realise this is extremely frustrating, but without an official data source for wait times, I cannot provide accurate estimates for every site. Also, due to the current testing demand, I'm not 100% sure how accurate the wait times are, so please plan accordingly. Sorry for the inconvenience."
+        message="Victoria Health no longer reports wait time data for every testing facility. Unfortunately due to the current testing demands and without an official data source for wait times, accurate estimates for every site cannot be provided. Apologies for the inconvenience."
       />
       {viewBy === ViewBy.map && (
         <LocationsMap
