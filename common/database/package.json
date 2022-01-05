@@ -27,15 +27,15 @@
   },
   "dependencies": {
     "@dwmc-common/testing-facilities": "0.0.1",
-    "pg": "8.6.0",
-    "rafter": "0.8.44",
+    "pg": "8.7.1",
+    "rafter": "0.8.62",
     "reflect-metadata": "0.1.13",
-    "sequelize": "6.6.2",
-    "sequelize-typescript": "2.1.0",
+    "sequelize": "6.12.5",
+    "sequelize-typescript": "2.1.2",
     "uuid": "8.3.2"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "7.14.2",
+    "@babel/plugin-proposal-decorators": "7.16.7",
     "@types/sequelize": "4.28.11",
     "@types/validator": "13.7.1",
     "@types/uuid": "8.3.3"

@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@dwmc-common/database": "0.0.1",
-    "rafter": "0.8.44"
+    "rafter": "0.8.62"
   },
   "devDependencies": {},
   "main": "dist/index.js",
