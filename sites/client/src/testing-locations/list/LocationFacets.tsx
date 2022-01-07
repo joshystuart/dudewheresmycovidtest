@@ -1,24 +1,29 @@
-import React from 'react';
+import { ITestingFacility } from '@dwmc-common/testing-facilities';
 import { Grid } from '@material-ui/core';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import DriveEtaIcon from '@material-ui/icons/DriveEta';
-import AccessTimeIcon from '@material-ui/icons/AccessTime';
-import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
-import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
-import EnhancedEncryptionIcon from '@material-ui/icons/EnhancedEncryption';
 import AccessAlarmsIcon from '@material-ui/icons/AccessAlarms';
+import AccessTimeIcon from '@material-ui/icons/AccessTime';
+import AlarmOffIcon from '@material-ui/icons/AlarmOff';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
+import DriveEtaIcon from '@material-ui/icons/DriveEta';
+import EnhancedEncryptionIcon from '@material-ui/icons/EnhancedEncryption';
+import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
+import WarningIcon from '@material-ui/icons/Warning';
+import React from 'react';
 import {
-  requiresAppointment,
+  isAtCapacity,
   isClinic,
+  isClosed,
+  isClosedPermanently,
   isDriveThrough,
   isHospital,
   isOpen,
   isWalkup,
+  requiresAppointment,
   requiresReferral,
 } from '../FacilityHelpers';
 import { Facets } from './Facets';
-import { ITestingFacility } from '@dwmc-common/testing-facilities';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -41,7 +46,10 @@ export function LocationFacets({ facility }: ILocationFacets) {
       {isHospital(facility) && <Facets title="Hospital" Icon={LocalHospitalIcon} />}
       {isWalkup(facility) && <Facets title="Walk up" Icon={DirectionsWalkIcon} />}
       {isClinic(facility) && <Facets title="Clinic" Icon={EnhancedEncryptionIcon} />}
-      {isOpen(facility) && <Facets title="Open now" Icon={AccessTimeIcon} />}
+      {isOpen(facility) && <Facets title="Open now" Icon={AccessTimeIcon} iconColor="secondary" />}
+      {isClosed(facility) && <Facets title="Closed" Icon={AlarmOffIcon} />}
+      {isClosedPermanently(facility) && <Facets title="Closed - Permanently" Icon={AlarmOffIcon} iconColor="error" />}
+      {isAtCapacity(facility) && <Facets title="Closed - At capacity" Icon={WarningIcon} iconColor="error" />}
       {requiresAppointment(facility) && <Facets title="Requires appointment" Icon={AccessAlarmsIcon} />}
       {requiresReferral(facility) && <Facets title="Requires referral" Icon={AssignmentIcon} />}
     </Grid>

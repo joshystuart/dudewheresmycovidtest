@@ -2,6 +2,7 @@ import { sort } from 'fast-sort';
 import { ICovidTestingLocation } from '../LocationsDao';
 
 export enum SortBy {
+  all = 'all',
   waitTime = 'waitTime',
   distance = 'distance',
   totalTime = 'totalTime',
@@ -9,6 +10,8 @@ export enum SortBy {
 
 export function sortFacilities(facilities: ICovidTestingLocation[], sortBy: SortBy): ICovidTestingLocation[] {
   switch (sortBy) {
+    case SortBy.all:
+      return sortFacilitiesByAlphabetical(facilities);
     case SortBy.distance:
       return sortFacilitiesByDistance(facilities);
     case SortBy.waitTime:
@@ -17,6 +20,14 @@ export function sortFacilities(facilities: ICovidTestingLocation[], sortBy: Sort
     default:
       return sortFacilitiesByTotalTime(facilities);
   }
+}
+
+export function sortFacilitiesByAlphabetical(facilities: ICovidTestingLocation[]): ICovidTestingLocation[] {
+  return sort(facilities).by([
+    {
+      asc: (prop) => prop.facility.site,
+    },
+  ]);
 }
 
 export function sortFacilitiesByDistance(facilities: ICovidTestingLocation[]): ICovidTestingLocation[] {

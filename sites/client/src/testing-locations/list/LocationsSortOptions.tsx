@@ -34,6 +34,7 @@ export function LocationsSortOptions({ handleSortBy, sortBy }: IFacilitiesSearch
     <FormControl variant="outlined" className={classes.formControl} size="small">
       <InputLabel id="time-select-label">Time</InputLabel>
       <Select id="time-select" labelId="time-select-label" label="Time" value={sortBy} onChange={handleOnSortChange}>
+        <MenuItem value={SortBy.all}>All</MenuItem>
         <MenuItem value={SortBy.totalTime}>Quickest overall</MenuItem>
         <MenuItem value={SortBy.distance}>Fastest travel time</MenuItem>
         <MenuItem value={SortBy.waitTime}>Shortest wait time</MenuItem>

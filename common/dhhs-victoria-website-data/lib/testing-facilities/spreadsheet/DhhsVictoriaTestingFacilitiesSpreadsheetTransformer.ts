@@ -1,10 +1,10 @@
+import { INewTestingFacility, State, Status } from '@dwmc-common/database';
 import { ILogger } from '@rafterjs/logger-plugin';
-import { INewTestingFacility, State } from '@dwmc-common/database';
+import { FacilityIdHelper } from '../../FacilityIdHelper';
 import {
   IDhhsVictoriaTestingFacilitiesSpreadsheet,
   TestingFacilitiesSpreadsheetRow,
 } from './DhhsVictoriaTestingFacilitiesSpreadsheet';
-import { FacilityIdHelper } from '../../FacilityIdHelper';
 
 export class DhhsVictoriaTestingFacilitiesSpreadsheetTransformer {
   constructor(private readonly facilityIdHelper: FacilityIdHelper, private readonly logger: ILogger) {}
@@ -33,6 +33,8 @@ export class DhhsVictoriaTestingFacilitiesSpreadsheetTransformer {
         availability: this.getFieldValue(entry.gsx$serviceavailability),
         requirements: this.getFieldValue(entry.gsx$requirements),
         currentWaitTime: this.getCurrentWaitTime(this.getFieldValue(entry.gsx$delay)),
+        currentWaitTimeDescription: this.getFieldValue(entry.gsx$delaytext),
+        status: Status.OPEN,
       };
 
       testingFacilities.push(facility);

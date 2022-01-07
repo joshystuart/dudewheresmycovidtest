@@ -1,4 +1,4 @@
-import { ITestingFacility } from '@dwmc-common/testing-facilities';
+import { ITestingFacility, Status } from '@dwmc-common/testing-facilities';
 
 export const HOSPITALS = ['Hospital Respiratory Clinic'];
 export const CLINICS = ['Pathology Collection Centre', 'GP Respiratory Clinic', 'Community Health Respiratory Clinic'];
@@ -22,7 +22,19 @@ export function isHospital(facility: ITestingFacility): boolean {
 }
 
 export function isOpen(facility: ITestingFacility): boolean {
-  return facility.availability === 'Walk-through Testing Facility';
+  return facility.status === Status.OPEN;
+}
+
+export function isClosed(facility: ITestingFacility): boolean {
+  return facility.status === Status.CLOSED || facility.status === Status.TEMPORARILY_CLOSED;
+}
+
+export function isAtCapacity(facility: ITestingFacility): boolean {
+  return facility.status === Status.AT_CAPACITY;
+}
+
+export function isClosedPermanently(facility: ITestingFacility): boolean {
+  return facility.status === Status.UNKNOWN;
 }
 
 export function requiresAppointment(facility: ITestingFacility): boolean {

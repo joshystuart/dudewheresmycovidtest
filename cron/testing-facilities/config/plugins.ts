@@ -6,5 +6,4 @@ export default (): IPlugins =>
     '@rafterjs/utils',
     '@dwmc-common/database',
     '@dwmc-common/dhhs-victoria-website-data',
-    '@dwmc-common/health-direct-data',
   ]);

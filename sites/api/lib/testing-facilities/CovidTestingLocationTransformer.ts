@@ -41,6 +41,8 @@ export class CovidTestingLocationTransformer {
         requirements: facility.get('requirements'),
         location,
         currentWaitTime: facility.get('currentWaitTime') || undefined,
+        currentWaitTimeDescription: facility.get('currentWaitTimeDescription') || undefined,
+        status: facility.get('status'),
       };
 
       relativeFacilities.push({

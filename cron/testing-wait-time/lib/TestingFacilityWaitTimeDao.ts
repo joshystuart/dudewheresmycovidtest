@@ -1,4 +1,3 @@
-import { ILogger } from '@rafterjs/logger-plugin';
 import {
   INewTestingWaitTime,
   ITestingFacility,
@@ -7,6 +6,7 @@ import {
   TestingWaitTimeDao,
 } from '@dwmc-common/database';
 import { DhhsVictoriaTestingFacilitiesApiDao } from '@dwmc-common/dhhs-victoria-website-data';
+import { ILogger } from '@rafterjs/logger-plugin';
 import { TestingFacilityWaitTimeTransformer } from './TestingFacilityWaitTimeTransformer';
 
 export class TestingFacilityWaitTimeDao {
@@ -39,7 +39,7 @@ export class TestingFacilityWaitTimeDao {
             await this.createTestingWaitTime(testingWaitTime);
           }
 
-          await this.updateTestingFacilityCurrentWaitTime(testingFacility, testingWaitTime);
+          await this.updateTestingFacilityCurrentWaitTime(testingFacility);
         } catch (error) {
           this.logger.error(`Failed to create the item`, testingFacilityWaitTimes, error);
         }
@@ -47,14 +47,7 @@ export class TestingFacilityWaitTimeDao {
     }
   }
 
-  private async updateTestingFacilityCurrentWaitTime(
-    testingFacility: TestingFacility,
-    testingWaitTime?: INewTestingWaitTime,
-  ): Promise<void> {
-    const currentWaitTime = testingWaitTime ? testingWaitTime.waitTime : null;
-    testingFacility.set('currentWaitTime', currentWaitTime);
-    // await TestingFacility.update({ currentWaitTime }, { where: { id: testingFacility.get('id') } });
-
+  private async updateTestingFacilityCurrentWaitTime(testingFacility: TestingFacility): Promise<void> {
     await this.testingFacilityDao.update(testingFacility.toJSON() as ITestingFacility);
   }
 

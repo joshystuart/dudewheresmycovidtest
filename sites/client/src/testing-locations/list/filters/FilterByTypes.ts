@@ -1,22 +1,25 @@
-import { ICovidTestingLocation } from '../LocationsDao';
-import { isClinic, isDriveThrough, isHospital } from '../FacilityHelpers';
+import { ICovidTestingLocation } from '../../LocationsDao';
+import { isClinic, isDriveThrough, isHospital } from '../../FacilityHelpers';
 
-export enum FilterBy {
+export enum FilterByTypes {
   all = 'all',
   clinics = 'clinics',
   driveThrough = 'driveThrough',
   hospitals = 'hospitals',
 }
 
-export function filterFacilities(facilities: ICovidTestingLocation[], sortBy: FilterBy): ICovidTestingLocation[] {
-  switch (sortBy) {
-    case FilterBy.clinics:
+export function filterFacilitiesByType(
+  facilities: ICovidTestingLocation[],
+  filterByType: FilterByTypes,
+): ICovidTestingLocation[] {
+  switch (filterByType) {
+    case FilterByTypes.clinics:
       return filterByClinics(facilities);
-    case FilterBy.hospitals:
+    case FilterByTypes.hospitals:
       return filterByHospitals(facilities);
-    case FilterBy.driveThrough:
+    case FilterByTypes.driveThrough:
       return filterByDriveThroughs(facilities);
-    case FilterBy.all:
+    case FilterByTypes.all:
     default:
       return facilities;
   }

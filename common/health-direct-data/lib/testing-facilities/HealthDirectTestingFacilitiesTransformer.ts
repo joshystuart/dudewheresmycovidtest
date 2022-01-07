@@ -1,9 +1,9 @@
 /* eslint-disable no-underscore-dangle */
+import { INewTestingFacility, State, Status } from '@dwmc-common/database';
 import { ILogger } from '@rafterjs/logger-plugin';
 import startCase from 'lodash/startCase';
-import { INewTestingFacility, State } from '@dwmc-common/database';
-import { IHealthDirectHealthCareService, IHealthDirectResponse } from './HealthDirect';
 import { FacilityIdHelper } from '../FacilityIdHelper';
+import { IHealthDirectHealthCareService, IHealthDirectResponse } from './HealthDirect';
 
 export class HealthDirectTestingFacilitiesTransformer {
   constructor(private readonly facilityIdHelper: FacilityIdHelper, private readonly logger: ILogger) {}
@@ -31,6 +31,7 @@ export class HealthDirectTestingFacilitiesTransformer {
         website: '',
         availability: '',
         requirements: '',
+        status: Status.OPEN,
       };
 
       testingFacilities.push(facility);
