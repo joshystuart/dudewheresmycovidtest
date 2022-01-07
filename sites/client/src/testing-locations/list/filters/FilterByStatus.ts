@@ -18,6 +18,6 @@ export function filterFacilitiesByStatus(
   }
 
   return facilities.filter(({ facility }) => {
-    return facility.status.toString() === filterByStatus;
+    return facility?.status?.toString() === filterByStatus;
   });
 }

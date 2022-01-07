@@ -38,7 +38,7 @@ export function LocationDetailsModal() {
   };
 
   return (
-    <Dialog open={open} onClose={handleClose} fullScreen>
+    <Dialog open={open} onClose={handleClose} fullScreen PaperProps={{ style: { backgroundColor: 'transparent' } }}>
       <Container maxWidth="md" className={classes.modal}>
         <Paper>
           <Box className={classes.container}>
