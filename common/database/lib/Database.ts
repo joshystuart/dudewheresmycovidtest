@@ -1,7 +1,7 @@
-import { join } from 'path';
 import { ILogger } from '@rafterjs/logger-plugin';
+import { join } from 'path';
+import { NonNullFindOptions } from 'sequelize';
 import { Model, ModelCtor, Sequelize } from 'sequelize-typescript';
-import { NonNullFindOptions } from 'sequelize/types/lib/model';
 import { IDatabaseConfig } from '../config/config';
 import { TestingFacility } from './models/TestingFacility';
 import { TestingWaitTime } from './models/TestingWaitTime';
@@ -59,7 +59,10 @@ export class Database {
     return undefined;
   }
 
-  public async findOne<M extends Model>(modelType: ModelCtor<M>, options: IFindOneOptions<M>): Promise<M | undefined> {
+  public async findOne<M extends Model>(
+    modelType: ModelCtor<M>,
+    options: IFindOneOptions<M['_attributes']>,
+  ): Promise<M | undefined> {
     const model = await modelType.findOne({
       ...options,
       rejectOnEmpty: false,
