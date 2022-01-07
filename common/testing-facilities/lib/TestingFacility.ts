@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-shadow
-
 import { ITestingFacilityLocation } from './TestingFacilityLocation';
 import { TestingFacilityType } from './TestingFacilityType';
 

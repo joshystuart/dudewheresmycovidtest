@@ -1,11 +1,11 @@
+import { InputAdornment, List, ListItem, ListItemText, TextField } from '@material-ui/core';
+import RoomIcon from '@material-ui/icons/Room';
 import React, { createRef } from 'react';
 import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete';
-import { InputAdornment, List, ListItem, ListItemText, TextField } from '@material-ui/core';
-import { useUserContext } from './UserContext';
 import { Loading } from '../../components/Loading';
-import { Paper } from '../../components/Paper';
-import RoomIcon from '@material-ui/icons/Room';
 import { Overlay } from '../../components/Overlay';
+import { Paper } from '../../components/Paper';
+import { useUserContext } from './UserContext';
 
 export function UserAddressAutoComplete() {
   const { address: userAddress = '', setAddress, setCoordinates, isLoading: isUserLoading } = useUserContext();
@@ -43,9 +43,8 @@ export function UserAddressAutoComplete() {
             <div>
               <TextField
                 id="user-address-autocomplete"
-                fullWidth
-                value={userAddress}
                 inputRef={inputRef}
+                fullWidth
                 autoFocus
                 {...getInputProps({
                   placeholder: isUserLoading ? 'Getting your location' : 'Enter your location...',
@@ -59,6 +58,7 @@ export function UserAddressAutoComplete() {
                     </InputAdornment>
                   ),
                 }}
+                value={userAddress}
               />
 
               <List component="nav" className="autocomplete-dropdown-container" aria-label="mailbox folders">
@@ -67,7 +67,7 @@ export function UserAddressAutoComplete() {
                   const { description, placeId } = suggestion;
 
                   return (
-                    <ListItem key={placeId} button divider {...getSuggestionItemProps(suggestion)}>
+                    <ListItem button divider {...getSuggestionItemProps(suggestion, { key: placeId })}>
                       <ListItemText primary={description} />
                     </ListItem>
                   );

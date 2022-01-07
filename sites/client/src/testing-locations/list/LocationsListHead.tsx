@@ -1,10 +1,10 @@
-import React from 'react';
 import { TableCell, TableRow } from '@material-ui/core';
-import { SortBy } from './SortBy';
+import { createStyles, makeStyles } from '@material-ui/core/styles';
+import React from 'react';
 import { ListColumnHeading } from './ListColumnHeading';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import { SortBy } from './SortBy';
 
-const useStyles = makeStyles((theme: Theme) => {
+const useStyles = makeStyles(() => {
   return createStyles({
     cell: {
       minWidth: 85,

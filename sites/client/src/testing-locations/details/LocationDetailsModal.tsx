@@ -1,23 +1,23 @@
+import { Box, Container, Dialog, IconButton } from '@material-ui/core';
+import { createStyles, makeStyles } from '@material-ui/core/styles';
+import { Close } from '@material-ui/icons';
 import React, { useEffect, useState } from 'react';
-import { Box, Container, IconButton, Modal } from '@material-ui/core';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import { Paper } from '../../components/Paper';
 import { useSelectedLocation } from '../SelectedLocationContext';
 import { LocationDetails } from './LocationDetails';
-import { Close } from '@material-ui/icons';
-import { Paper } from '../../components/Paper';
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles(() =>
   createStyles({
-    root: {
+    modal: {
       position: 'relative',
+      outline: 0,
+      paddingBottom: 50,
     },
     close: {
       position: 'absolute',
-      right: 0,
+      right: 25,
     },
-    modal: {
-      outline: 0,
-    },
+    container: {},
   }),
 );
 
@@ -38,10 +38,10 @@ export function LocationDetailsModal() {
   };
 
   return (
-    <Modal open={open} onClose={handleClose} onBackdropClick={handleClose}>
+    <Dialog open={open} onClose={handleClose} fullScreen>
       <Container maxWidth="md" className={classes.modal}>
         <Paper>
-          <Box className={classes.root}>
+          <Box className={classes.container}>
             <IconButton color="secondary" onClick={handleClose} className={classes.close}>
               <Close />
             </IconButton>
@@ -49,6 +49,6 @@ export function LocationDetailsModal() {
           </Box>
         </Paper>
       </Container>
-    </Modal>
+    </Dialog>
   );
 }
