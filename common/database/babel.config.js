@@ -1,5 +1,8 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { plugins, presets } = require('../../babel.config');
+
 module.exports = {
   ignore: ['**/*.spec.ts'],
-  plugins: [['@babel/plugin-proposal-decorators', { legacy: true }]],
-  presets: [['@rafterjs/babel-preset-rafter', { typescript: true }]],
+  plugins,
+  presets,
 };

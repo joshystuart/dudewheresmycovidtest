@@ -53,7 +53,7 @@ export default class CovidTestingFacilitiesController extends JsonController {
           request,
           response,
           new JsonErrorResponseDto({
-            errors: [new BadRequestError(error)],
+            errors: [new BadRequestError((error as Error).toString())],
             status: Status.BAD_REQUEST,
           }),
         );

@@ -28,7 +28,7 @@ export function ListColumnHeading({ title, helpText, selected = false, justify =
   const classes = useStyles();
 
   return (
-    <Grid container spacing={0} wrap="nowrap" justify={justify}>
+    <Grid container spacing={0} wrap="nowrap" justifyContent={justify}>
       <Grid item>
         <Typography align="center" variant="body1" className={classes.title}>
           {selected ? <strong> {title}</strong> : <> {title}</>}
