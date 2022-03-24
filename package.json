@@ -73,11 +73,11 @@
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.23.3",
     "eslint-plugin-prettier": "3.4.0",
-    "jest": "26.6.3",
+    "jest": "27.5.1",
     "nodemon": "2.0.15",
     "prettier": "2.5.1",
     "rimraf": "3.0.2",
-    "ts-jest": "26.5.6",
+    "ts-jest": "27.1.4",
     "ts-node": "10.4.0",
     "ts-sinon": "2.0.2",
     "typescript": "4.3.5"
