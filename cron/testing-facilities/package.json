@@ -37,7 +37,7 @@
     "rafter": "0.8.62"
   },
   "devDependencies": {
-    "@types/aws-lambda": "8.10.92"
+    "@types/aws-lambda": "8.10.98"
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
