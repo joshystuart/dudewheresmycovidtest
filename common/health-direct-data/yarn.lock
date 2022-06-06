@@ -2,21 +2,21 @@
 # yarn lockfile v1
 
 
-"@rafterjs/di-autoloader@^0.8.62":
-  version "0.8.62"
-  resolved "https://registry.yarnpkg.com/@rafterjs/di-autoloader/-/di-autoloader-0.8.62.tgz#8bce5925c25497f403cc724fe96e73a575c52066"
-  integrity sha512-UDm/6ujYaDEBU2jDkszqZUEVGQ2kSA90NvujblPv4MASz3l+iZFZc0wOHQy0zcyxj8KS3FtecrlpsOcR51GGSA==
+"@rafterjs/di-autoloader@^0.8.67":
+  version "0.8.67"
+  resolved "https://registry.yarnpkg.com/@rafterjs/di-autoloader/-/di-autoloader-0.8.67.tgz#83b091d7b1f0f9e26c515e2417e49d9fe7adeee0"
+  integrity sha512-Q+TZY/9c7PrMw01Nqx07bJtpqYtcbuT+u3lzzCSe1+TSqhc4PW/H9SNKDYTVQYl9kLwn5qYMuZkk/0sW5mo2VQ==
   dependencies:
-    "@rafterjs/logger-plugin" "^0.8.62"
+    "@rafterjs/logger-plugin" "^0.8.67"
     awilix "6.0.0"
     is-class "0.0.9"
     lodash "4.17.21"
     ts-deepmerge "1.1.0"
 
-"@rafterjs/logger-plugin@^0.8.62":
-  version "0.8.62"
-  resolved "https://registry.yarnpkg.com/@rafterjs/logger-plugin/-/logger-plugin-0.8.62.tgz#1e6b686d3d27303c37fbca09fb70fdc789201d02"
-  integrity sha512-AdK12whgwNs9khX0+ohRLgiEQ3OspvpQ4L2QORpFPHGdasQhsvA7zQCaFaNEIkGB7AT3uDq2BeDIOCrnKk6hcA==
+"@rafterjs/logger-plugin@^0.8.67":
+  version "0.8.67"
+  resolved "https://registry.yarnpkg.com/@rafterjs/logger-plugin/-/logger-plugin-0.8.67.tgz#86b65348ded4c4a769705d12e2e7594636f18b51"
+  integrity sha512-a2yY0jVW5r3CeY2EjFEEURwBLJTZVGb9GwSyJmmBnTECtMVpYsZM3PC4QgJBAeGrYvBbGXuvi261zsO/C18owg==
   dependencies:
     log4js "6.3.0"
 
@@ -578,13 +578,13 @@ qs@6.9.6:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.6.tgz#26ed3c8243a431b2924aca84cc90471f35d5a0ee"
   integrity sha512-TIRk4aqYLNoJUbd+g2lEdz5kLWIuTMRagAXxl78Q0RiVjAOugHmeKNGdd3cwo/ktpf9aL9epCfFqWDEKysUlLQ==
 
-rafter@0.8.62:
-  version "0.8.62"
-  resolved "https://registry.yarnpkg.com/rafter/-/rafter-0.8.62.tgz#df858689d5df4e5cbf401bca4cfc666b3c4cdda3"
-  integrity sha512-qadyrN4K+8vSuNqz04hAd9YaxMNFTlS4Q9yHn6LUUxHWDt6Dm8kE6PcsrwWm6XrZhxEQiJU60jAlGHQo+aeWug==
+rafter@0.8.67:
+  version "0.8.67"
+  resolved "https://registry.yarnpkg.com/rafter/-/rafter-0.8.67.tgz#919dcf9e6ee9813ee40d69d13726d7069381a401"
+  integrity sha512-wUm6Tv6byKCLQ0FTv/P8DQ7Io9dwFfadgqB6DOC+L8Mh/6TvIHyscAYAsr7YG7crhjXZTTtDZaec2XornR6tyw==
   dependencies:
-    "@rafterjs/di-autoloader" "^0.8.62"
-    "@rafterjs/logger-plugin" "^0.8.62"
+    "@rafterjs/di-autoloader" "^0.8.67"
+    "@rafterjs/logger-plugin" "^0.8.67"
     awilix "6.0.0"
     express "4.17.2"
     find-node-modules "2.1.2"
