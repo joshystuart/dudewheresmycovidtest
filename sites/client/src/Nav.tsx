@@ -34,14 +34,14 @@ export function Nav() {
           <Typography variant="h6" component={Link} to="/" className={classes.title}>
             Dude Where's My Covid Test
           </Typography>
-          <Box className={classes.menuButton}>
-            <Button color="secondary" variant="contained" component={Link} to="/">
-              Search
-            </Button>
-            <Button color="secondary" variant="contained" component={Link} to="/about">
-              About
-            </Button>
-          </Box>
+          {/*<Box className={classes.menuButton}>*/}
+          {/*  <Button color="secondary" variant="contained" component={Link} to="/">*/}
+          {/*    Search*/}
+          {/*  </Button>*/}
+          {/*  <Button color="secondary" variant="contained" component={Link} to="/about">*/}
+          {/*    About*/}
+          {/*  </Button>*/}
+          {/*</Box>*/}
         </Toolbar>
       </AppBar>
     </div>

@@ -1,10 +1,9 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { HomeScreen } from './screens/HomeScreen';
-import { AboutScreen } from './screens/AboutScreen';
-import { Nav } from './Nav';
-import { Container } from '@material-ui/core';
-import { createStyles, makeStyles } from '@material-ui/core/styles';
+import { Container } from "@material-ui/core";
+import { createStyles, makeStyles } from "@material-ui/core/styles";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Nav } from "./Nav";
+import { ShutdownScreen } from "./screens/ShutdownScreen";
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -21,14 +20,15 @@ export function Routes() {
     <Router>
       <Nav />
       <Container className={classes.root} maxWidth="md">
-        <Switch>
-          <Route path="/about">
-            <AboutScreen />
-          </Route>
-          <Route path="/">
-            <HomeScreen />
-          </Route>
-        </Switch>
+        {/*<Switch>*/}
+        {/*  <Route path="/about">*/}
+        {/*    <AboutScreen />*/}
+        {/*  </Route>*/}
+        {/*  <Route path="/">*/}
+        {/*    <HomeScreen />*/}
+        {/*  </Route>*/}
+        {/*</Switch>*/}
+        <ShutdownScreen />
       </Container>
     </Router>
   );
