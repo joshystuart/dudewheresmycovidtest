@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@dwmc-common/database": "0.0.1",
-    "rafter": "0.8.62",
+    "rafter": "0.8.69",
     "lodash": "4.17.21"
   },
   "devDependencies": {

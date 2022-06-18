@@ -33,8 +33,8 @@
   "dependencies": {
     "@dwmc-common/database": "0.0.1",
     "@dwmc-common/dhhs-victoria-website-data": "0.0.1",
-    "@rafterjs/lambda": "0.8.62",
-    "rafter": "0.8.62"
+    "@rafterjs/lambda": "0.8.69",
+    "rafter": "0.8.69"
   },
   "devDependencies": {
     "@types/aws-lambda": "8.10.92"
